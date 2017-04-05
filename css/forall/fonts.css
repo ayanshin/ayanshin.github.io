@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'intro_regular';
+    font-family: 'intro';
     src: url('/fonts/intro.eot');
     src: url('/fonts/intro.eot?#iefix') format('embedded-opentype'),
          url('/fonts/intro.woff2') format('woff2'),
          url('/fonts/intro.woff') format('woff'),
          url('/fonts/intro.ttf') format('truetype'),
-         url('/fonts/intro.svg#intro_regular') format('svg');
+         url('/fonts/intro.svg#intro') format('svg');
     font-weight: normal;
     font-style: normal;
 }
