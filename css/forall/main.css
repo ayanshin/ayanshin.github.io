@@ -1,4 +1,52 @@
 html, body {height:100%;font-family:'roboto',Verdana;font-size:16px;}
-h1,h2,h3,h4,h5,h6{font-family:'intro';}
 
-#body{overflow:hidden;}
+
+h1,h2,h3,.h1,.h2,.h3{font-family:'intro';color:#009dff;text-align:center;}
+
+h1, .h1{
+	color:#009dff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#body{margin:0  0 -270px;min-height:100%;height:auto !important;height:100%;}
+#body .block>div,footer>div,header>div{max-width:1500px;padding:0 30px;margin-right:auto;margin-left:auto;}
+
+#body:after{content:'';display:block;height:270px;}
+
+.block{
+	overflow:hidden;
+}
+
+.lblue{	background:#8cd3ff;}
+.llblue{background:#bde6ff;}
+
+header{
+	color:#fff;
+	background: #0872c2;
+	background: -moz-linear-gradient(top,  #0872c2 0%, #1285d1 100%);
+	background: -webkit-linear-gradient(top,  #0872c2 0%,#1285d1 100%);
+	background: linear-gradient(to bottom,  #0872c2 0%,#1285d1 100%);
+	overflow:hidden;
+}
+
+#logo{
+	display:block;
+	height:67px;
+	width:326px;
+	margin:14px 0 23px;
+	background:url(/images/forall/logo.png) no-repeat 0 0;
+}
+
+footer{
+	margin:0 auto;
+	position:relative;
+	margin-top:-270px;
+	background:#0264b3;
+	color:#fff;
+}
+
+footer>div{
+	margin:0 auto;
+	height:270px;
+}
