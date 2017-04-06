@@ -1,7 +1,7 @@
 ﻿.block.advantage{padding:0 20px;}
 .block.advantage img{margin-bottom:20px;}
-.block.advantage .col-md-4{padding-bottom:20px;}
-.block.advantage .col-md-4 p{font-size:18px;max-width:340px;margin:0 auto;}
+.block.advantage .col-lg-4{padding-bottom:20px;}
+.block.advantage .col-lg-4 p{font-size:18px;max-width:340px;margin:0 auto;}
 
 .date-choose{text-align:center;color:#007dcc;margin:20px 0 40px;}
 .date-choose>div{
