@@ -1,0 +1,22 @@
+﻿.block.advantage{padding:0 20px;}
+.block.advantage img{margin-bottom:20px;}
+.block.advantage .col-md-4{padding-bottom:20px;}
+.block.advantage .col-md-4 p{font-size:18px;max-width:340px;margin:0 auto;}
+
+.date-choose{text-align:center;color:#007dcc;margin:20px 0 40px;}
+.date-choose>div{
+	display:inline-block;
+	padding:10px;
+	border:solid 2px #009dff;
+	border-radius:10px;
+}
+.date-choose time{
+	display:inline-block;
+}
+.date-choose time span{
+	display:block;
+	border:solid 2px #009dff;
+	border-radius:10px;
+	padding:16px 6px;
+	margin:5px 50px 10px;
+}
