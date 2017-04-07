@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿html, body {height:100%;font-family:'roboto',Verdana;font-size:16px;}
+=======
+html, body {height:100%;font-family:'roboto',Verdana;font-size:16px;}
+>>>>>>> origin/master
 
 
 h1,h2,h3,.h1,.h2,.h3{font-family:'intro';color:#009dff;text-align:center;}
@@ -10,7 +14,11 @@ h1, .h1{
 }
 
 #body{margin:0  0 -270px;min-height:100%;height:auto !important;height:100%;}
+<<<<<<< HEAD
 .block>*,footer>*{max-width:1560px;padding:0 30px;margin-right:auto;margin-left:auto;}
+=======
+#body .block>*,footer>*{max-width:1500px;padding:0 30px;margin-right:auto;margin-left:auto;}
+>>>>>>> origin/master
 
 #body:after{content:'';display:block;height:270px;}
 
@@ -18,11 +26,14 @@ h1, .h1{
 	overflow:hidden;
 }
 
+<<<<<<< HEAD
 .block.tight>*{
 	padding:0 220px;
 	max-width:1500px
 }
 
+=======
+>>>>>>> origin/master
 .lblue{	background:#8cd3ff;}
 .llblue{background:#bde6ff;}
 
@@ -92,8 +103,11 @@ footer>div{
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 /*  Bootstrap Clearfix */
  
 /*  Tablet  */
@@ -168,4 +182,8 @@ footer>div{
   .col-lg-6:nth-child(2n+1){
     clear: left;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
