@@ -1,42 +1,28 @@
 ﻿.block.advantage{padding:0 20px;}
 .block.advantage img{margin-bottom:20px;}
-<<<<<<< HEAD
 .block.advantage .col-md-4{padding-bottom:20px;}
 .block.advantage .col-md-4 p{font-size:18px;max-width:340px;margin:0 auto;}
 
 .date-choose{text-align:center;color:#007dcc;margin:20px auto 40px;}
 .date-choose>div{
 	padding:7px 50px;
-=======
-.block.advantage .col-lg-4{padding-bottom:20px;}
-.block.advantage .col-lg-4 p{font-size:18px;max-width:340px;margin:0 auto;}
-
-.date-choose{text-align:center;color:#007dcc;margin:20px 0 40px;}
-.date-choose>div{
-	display:inline-block;
-	padding:10px;
->>>>>>> origin/master
 	border:solid 2px #009dff;
 	border-radius:10px;
 }
 .date-choose time{
 	display:inline-block;
-<<<<<<< HEAD
 	border-radius:10px;
 	width:135px;
 	padding:8px 0 18px;
 	cursor:pointer;
 	margin:0 5px;
 	transition:all .3s ease;
-=======
->>>>>>> origin/master
 }
 .date-choose time span{
 	display:block;
 	border:solid 2px #009dff;
 	border-radius:10px;
 	padding:16px 6px;
-<<<<<<< HEAD
 	width:90px;
 	margin:5px auto;
 }
@@ -55,7 +41,3 @@
 .excursions img{
 	width:100%;
 }
-=======
-	margin:5px 50px 10px;
-}
->>>>>>> origin/master
