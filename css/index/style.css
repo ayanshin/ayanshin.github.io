@@ -27,17 +27,116 @@
 	margin:5px auto;
 }
 
-.date-choose time.active,.date-choose time:hover{
+.date-choose time.active,.date-choose time.active:hover{
 	background:#009dff;
 	color:#fff;
+	cursor:default;
 }
-.date-choose time:hover{
-	background:#ff6225;
-}
-.date-choose time.active span,.date-choose time:hover span{
+.date-choose time.active span,.date-choose time.active:hover span{
 	border-color:#fff;
 }
+.date-choose time:hover{
+	color:#ff6225;
+}
+.date-choose time:hover span{
+	border-color:#ff6225;
+}
 
+.excursions{
+	text-align:center;
+}
+.excursions .row{
+	margin-right:-30px;
+	margin-left:-30px;
+}
+.excursions .col-lg-4{
+	padding-right:30px;
+	padding-left:30px;
+	margin-bottom:40px;
+}
 .excursions img{
+	border-radius:10px;
 	width:100%;
+}
+.excursions .price{
+	position:absolute;
+	top:30px;
+	left:15px;
+	color:#fff;
+	background:#ff4800;
+	font-size:60px;
+	width:170px;
+	line-height:80px;
+}
+.excursions .price:after{
+	content:'';
+	display:block;
+	position:absolute;
+	border-top:solid 5px #c03600;
+	border-left:solid 15px transparent;
+	top:100%;
+	left:0;
+}
+.excursions .info{
+	position:absolute;
+	right:30px;
+	bottom:0;
+	left:30px;
+	background:rgba(0,45,73,.7);
+	border-radius:0 0 10px 10px;
+}
+.excursions .info{
+	color:#fff;
+}
+.excursions .info h2{
+	color:#fff;
+	font-weight:700;
+	font-family:roboto;
+	text-transform:uppercase;
+	margin-bottom:0;
+}
+.excursions .subinfo{
+	font-size:14px;
+	overflow:hidden;
+	padding:0 30px;
+}
+.excursions .subinfo>div{float:left;}
+.excursions .subinfo>div:first-child{width:55%;}
+.excursions .subinfo>div:last-child{width:45%;}
+.excursions .week{white-space:nowrap;margin-bottom:10px;}
+.excursions .week span,.excursions .week em{
+	display:inline-block;
+	color:#96a1a9;
+	border:solid 1px;
+	border-radius:13px;
+	line-height:24px;
+	width:26px;
+	font-style:normal;
+}
+.excursions .week span{
+	border-color:#fff;
+	background:#fff;
+	color:#172a3b;
+}
+
+.excursions .timeinfo{
+	text-align:left;
+	padding-left:35px;
+	background:url(/images/index/excursions-clock.png) no-repeat 0 50%;
+}
+.excursions .rating{
+	display:inline-block;
+	position:relative;
+	height:16px;
+	width:92px;
+}
+.excursions .rating:before,.excursions .rating:after{
+	content:'';
+	position:absolute;
+	display:block;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:url(/images/index/excursions-star.png) repeat-x 0 50%;
 }
