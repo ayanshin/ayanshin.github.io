@@ -24,6 +24,9 @@ nav a,nav a:hover{text-decoration:none;color:#fff;}
 .block.tight>*{
 	max-width:1120px
 }
+.block.bpadding{
+	padding-bottom:20px;
+}
 
 .lblue{	background:#8cd3ff;}
 .llblue{background:#bde6ff;}
