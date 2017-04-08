@@ -85,11 +85,11 @@ footer{
 	margin-top:-270px;
 	background:#0264b3;
 	color:#fff;
+	height:270px;
 }
 
-footer>div{
-	margin:0 auto;
-	height:270px;
+footer .nav{
+	background:#1972ba
 }
 
 
