@@ -21,8 +21,7 @@ a{text-decoration:underline;}
 }
 
 .block.tight>*{
-	padding:0 220px;
-	max-width:1500px
+	max-width:1120px
 }
 
 .lblue{	background:#8cd3ff;}
