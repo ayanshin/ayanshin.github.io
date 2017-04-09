@@ -21,7 +21,36 @@
 		<header>
 			<div class="block">
 				<div>
-					<div id="logo"></div>
+					<a href="#" id="logo"></a>
+					<div class="basket">
+						<span>15</span>
+						<p>На сумму: 156.123,00 $</p>
+						<a href="#" class="button primary">Корзина</a>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-7 info">
+								<div>
+									<div class="contacts">
+										<span class="phone">+ (420) 775 621 122<br/>+ (420) 775 094 014</span>
+										<span class="mail">info@eurocomp.com</span>
+									</div>
+									<form class="search-form">
+										<input type="text" value="Поиск"/>
+										<button>Найти</button>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<form class="login-form">
+									<i class="icon-login"></i><input type="text" class="login" value="Логин"/>
+									<i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/>
+									<button>Вход</button>
+									<a href="#">Регистрация</a>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<nav class="block" role="navigation">
@@ -49,6 +78,39 @@
 				</div>
 			</nav>
 		</header>
+		<div class="shadow-box">
+			<div class="excursion-form fluid-container">
+				<h2>ПОИСК ЭКСКУРСИИ</h2>
+				<div class="countries">
+					<a href="#" class="czech"></a>
+					<a href="#" class="gemrany"></a>
+					<a href="#" class="austria"></a>
+					<a href="#" class="italy"></a>
+				</div>
+				<div class="radio-select">
+					<input type="radio" name="excursion-type" id="radio-group" checked="true"/>
+					<label for="radio-group">Групповая</label>
+					<input type="radio" name="excursion-type" id="radio-individual"/>
+					<label for="radio-individual">Индивидуальная</label>
+				</div>
+				<p class="gray text-center">Расширенный поиск экскурсий</p>
+				<div class="row">
+					<div class="col-xs-6">
+						<p>Дата приезда</p>
+						<input type="text" class="date" value="10-12-2017"/>
+					</div>
+					<div class="col-xs-6">
+						<p>Дата отъезда</p>
+						<input type="text" class="date" value="10-12-2017"/>
+					</div>
+				</div>
+			</div>
+			<div class="slider-container">
+				<div class="slider">
+					<img src="/images/index/slide1.jpg" alt=""/>
+				</div>
+			</div>
+		</div>
 		<div class="block llblue tight bpadding">
 			<div>
 				<h1>EVROCOMP spol s.r.o</h1>
@@ -334,7 +396,7 @@
 	<footer>
 		<div class="block nav">
 			<div>
-				<form class="search">
+				<form class="search-form">
 					<input type="text" value="Поиск"/>
 				</form>
 				<nav>
@@ -348,6 +410,35 @@
 				</nav>
 			</div>
 		</div>
+		<div class="block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="contacts col-lg-4">
+						<span class="phone">+ (420) 775 621 122, + (420) 775 094 014</span>
+						<span class="mail">info@eurocomp.com</span>
+					</div>
+					<div class="social col-lg-4">
+						<p>Мы в соцсетях:</p>
+						<a href="#" class="fb"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="in"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="ok"></a>
+						<a href="#" class="youtube"></a>
+						<a href="#" class="insta"></a>
+					</div>
+					<div class="col-lg-4">
+						<div class="basket">
+							<span>15</span>
+							<p>На сумму: 156.123,00 $</p>
+							<a href="#" class="button primary">Корзина</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="copyright">©  2017 Loremipsum.com</div>
 	</footer>
   </body>
 </html>

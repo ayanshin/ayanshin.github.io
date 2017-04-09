@@ -15,7 +15,7 @@
 	width:135px;
 	padding:8px 0 18px;
 	cursor:pointer;
-	margin:0 5px;
+	/* margin:0 5px; */
 	transition:all .3s ease;
 }
 .date-choose time span{
@@ -163,28 +163,17 @@
 }
 .excursions .type.group{background-image:url(/images/index/excursions-group.png);}
 
+.excursions .button{
+	margin:15px 2px;
+	width:40%;
+	line-height:36px;
+}
 .excursions .buttons{
 	background:#002d49;
 	border-radius:0 0 10px 10px;
 }
 
-.excursions .button{
-	display:inline-block;
-	text-decoration:none;
-	line-height:36px;
-	width:40%;
-	margin:15px 2px;
-	border-radius:18px;
-	box-shadow:inset 0 0 0 2px #fff;
-}
 
-.button.buy.primary{
-	background: #ff733c;
-	background: -moz-linear-gradient(top,  #ff733c 0%, #ff4800 100%);
-	background: -webkit-linear-gradient(top,  #ff733c 0%,#ff4800 100%);
-	background: linear-gradient(to bottom,  #ff733c 0%,#ff4800 100%);
-	box-shadow:none;
-}
 .button.buy:before{
 	content:'';
 	display:inline-block;
@@ -204,4 +193,91 @@
 	border-right:solid 2px;
 	transform:rotate(45deg);
 	margin-left:10px;
+}
+
+.shadow-box{
+	position:relative;
+}
+.shadow-box:before,.shadow-box:after{
+	content:'';
+	display:block;
+	position:absolute;
+	width:100%;
+	height:3px;
+	background:rgba(0,38,63, .18)
+}
+.shadow-box:before{top:0;}
+.shadow-box:after{bottom:0;}
+
+.excursion-form{
+	overflow:hidden;
+	width:480px;
+	padding:0 50px;
+	height:590px;
+	font-size:18px;
+	background: #fff;
+	background: -moz-radial-gradient(center, ellipse cover,  #fff 0%, #e6e8ea 100%);
+	background: -webkit-radial-gradient(center, ellipse cover,  #fff 0%,#e6e8ea 100%);
+	background: radial-gradient(ellipse at center,  #fff 0%,#e6e8ea 100%);
+	float:left;
+}
+.excursion-form>div{
+	margin-bottom:10px;
+}
+.excursion-form .date{
+	border:solid 1px #999;
+	background:#fff;
+	border-radius:10px;
+	background:url(/images/forall/calendar.png) no-repeat 93% 50%;
+	padding:5px 15px;
+	width:100%;
+}
+.slider{
+	overflow:hidden;
+	height:590px;
+}
+
+.countries{
+	text-align:center;
+}
+.countries a{
+	display:inline-block;
+	width:38px;
+	height:37px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+.countries a.czech{background-image:url(/images/forall/countries/czech.png);}
+.countries a.gemrany{background-image:url(/images/forall/countries/germany.png);}
+.countries a.austria{background-image:url(/images/forall/countries/austria.png);}
+.countries a.italy{background-image:url(/images/forall/countries/italy.png);}
+
+.radio-select{overflow:hidden;}
+.radio-select label{
+	float:left;
+	width:50%;
+	line-height:42px;
+	text-align:center;
+	background: #b6b7b9;
+	color:#999;
+	background:#d8dada;
+	background:-moz-linear-gradient(top, ellipse cover,  #f5f6f6 0%, #e8eaeb 100%);
+	background:-webkit-linear-gradient(top, ellipse cover,  #f5f6f6 0%,#e8eaeb 100%);
+	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);
+	cursor:pointer;
+}
+.radio-select input{
+	position:absolute;
+	opacity:0;
+}
+.radio-select input:first-child+label{
+	border-radius:10px 0 0 10px;
+}
+.radio-select label:last-child{
+	border-radius:0 10px 10px 0;
+}
+.radio-select input:checked+label{
+	color:#323232;
+	background:#d8dada;
+	box-shadow:inset 5px 5px 10px 0 #b6b7b9;
 }
