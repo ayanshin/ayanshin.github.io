@@ -211,8 +211,8 @@
 
 .excursion-form{
 	overflow:hidden;
-	width:480px;
-	padding:0 50px;
+	width:26.6em;
+	padding:0 2.8em;
 	height:590px;
 	font-size:18px;
 	background: #fff;
@@ -221,17 +221,24 @@
 	background: radial-gradient(ellipse at center,  #fff 0%,#e6e8ea 100%);
 	float:left;
 }
-.excursion-form>div{
-	margin-bottom:10px;
+.excursion-form h2,.excursion-form .h2{
+	margin-top:.72em;
+	margin-bottom:.611em;
+}
+.excursion-form>div,.excursion-form>.button{
+	margin-bottom:.6em;
 }
 .excursion-form .date{
 	border:solid 1px #999;
 	background:#fff;
 	border-radius:10px;
 	background:url(/images/forall/calendar.png) no-repeat 93% 50%;
-	padding:5px 15px;
+	padding:.278em .833em;
 	width:100%;
+	outline:0;
+	margin-bottom:.778em;
 }
+
 .slider{
 	overflow:hidden;
 	height:590px;
@@ -256,15 +263,22 @@
 .radio-select label{
 	float:left;
 	width:50%;
-	line-height:42px;
+	line-height:2.333em;
 	text-align:center;
-	background: #b6b7b9;
 	color:#999;
 	background:#d8dada;
 	background:-moz-linear-gradient(top, ellipse cover,  #f5f6f6 0%, #e8eaeb 100%);
 	background:-webkit-linear-gradient(top, ellipse cover,  #f5f6f6 0%,#e8eaeb 100%);
 	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);
 	cursor:pointer;
+}
+.radio-select label,.excursion-form .button:not(.primary),.people-count{
+	color:#999;
+	background:#d8dada;
+	box-shadow:none;
+	background:-moz-linear-gradient(top, ellipse cover,  #f5f6f6 0%, #e8eaeb 100%);
+	background:-webkit-linear-gradient(top, ellipse cover,  #f5f6f6 0%,#e8eaeb 100%);
+	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);	
 }
 .radio-select input{
 	position:absolute;
@@ -280,4 +294,49 @@
 	color:#323232;
 	background:#d8dada;
 	box-shadow:inset 5px 5px 10px 0 #b6b7b9;
+}
+.excursion-form .button:not(.primary){
+	color:#393939;
+}
+.excursion-form .button{
+	display:block;
+	line-height:2.1em;
+	width:100%;
+}
+
+.people-count{
+	border-radius:10px;	
+	padding:.5em;
+	text-align:center;
+	color:#000;
+	margin-bottom:.889em
+}
+.people-count .gray{
+	color:#999;
+}
+.people-count span{
+	font-size:.889em;
+}
+.count-select{
+	word-spacing:-5px;
+}
+.count-select label{
+	display:inline-block;
+	color:#000;
+	line-height:1.389em;
+	width:1.389em;
+	text-align:center;
+	border-radius:.7em;
+}
+.count-select input{
+	position:absolute;
+	opacity:0;
+}
+.count-select input:checked+label{
+	background:#ff6225;
+	color:#fff;
+}
+
+.country-select{
+	outline:0;
 }

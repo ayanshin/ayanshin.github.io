@@ -7,13 +7,16 @@
     <title>EuroComp</title>
     <link rel="stylesheet" href="/css/modules/bootstrap.css">
     <link rel="stylesheet" href="/css/modules/slick.css">
+    <link rel="stylesheet" href="/css/modules/jquery-ui.css">
     <link rel="stylesheet" href="/css/forall/fonts.css">
     <link rel="stylesheet" href="/css/forall/slick-theme.css">
+    <link rel="stylesheet" href="/css/forall/jquery-ui.theme.css">
     <link rel="stylesheet" href="/css/forall/main.css">
     <link rel="stylesheet" href="/css/index/style.css">
     <script src="/js/modules/jquery.js"></script>
     <script src="/js/modules/slick.js"></script>
     <script src="/js/modules/bootstrap.js"></script>
+    <script src="/js/modules/jquery-ui.js"></script>
     <script src="/js/forall/common.js"></script>
   </head>
   <body>
@@ -87,6 +90,37 @@
 					<a href="#" class="austria"></a>
 					<a href="#" class="italy"></a>
 				</div>
+				<div>
+					<select name="country" class="country-select">
+						<option disabled selected>Выбор страны</option>
+						<option>Австрия</option>
+						<option>Албания</option>
+						<option>Андорра</option>
+						<option>Белоруссия</option>
+						<option>Бельгия</option>
+						<option>Болгария</option>
+						<option>Ватикан</option>
+						<option>Великобритания</option>
+						<option>Венгрия</option>
+						<option>Германия</option>
+						<option>Греция</option>
+						<option>Дания</option>
+						<option>Ирландия</option>
+						<option>Исландия</option>
+						<option>Испания</option>
+						<option>Италия</option>
+						<option>Латвия</option>
+						<option>Литва</option>
+						<option>Лихтенштейн</option>
+						<option>Люксембург</option>
+						<option>Македония</option>
+						<option>Мальта</option>
+						<option>Молдавия</option>
+						<option>Монако</option>
+						<option>Нидерланды</option>
+						<option>Норвегия</option>
+					</select>
+				</div>
 				<div class="radio-select">
 					<input type="radio" name="excursion-type" id="radio-group" checked="true"/>
 					<label for="radio-group">Групповая</label>
@@ -96,14 +130,50 @@
 				<p class="gray text-center">Расширенный поиск экскурсий</p>
 				<div class="row">
 					<div class="col-xs-6">
-						<p>Дата приезда</p>
+						<p class="text-center">Дата приезда</p>
 						<input type="text" class="date" value="10-12-2017"/>
+						<div class="people-count">
+							<span>Взрослые </span><span class="gray">от 12 лет</span>
+							<div class="count-select">
+								<input type="radio" name="adult-count" id="adult-1" checked="true"/>
+								<label for="adult-1">1</label>
+								<input type="radio" name="adult-count" id="adult-2" checked="true"/>
+								<label for="adult-2">2</label>
+								<input type="radio" name="adult-count" id="adult-3" checked="true"/>
+								<label for="adult-3">3</label>
+								<input type="radio" name="adult-count" id="adult-4" checked="true"/>
+								<label for="adult-4">4</label>
+								<input type="radio" name="adult-count" id="adult-5" checked="true"/>
+								<label for="adult-5">5</label>
+							</div>
+						</div>
 					</div>
 					<div class="col-xs-6">
-						<p>Дата отъезда</p>
+						<p class="text-center">Дата отъезда</p>
 						<input type="text" class="date" value="10-12-2017"/>
+						<div class="people-count">
+							<span>Дети </span><span class="gray">до 12 лет</span>
+							<div class="count-select">
+								<input type="radio" name="child-count" id="child-0" checked="true"/>
+								<label for="child-0">0</label>
+								<input type="radio" name="child-count" id="child-1" checked="true"/>
+								<label for="child-1">1</label>
+								<input type="radio" name="child-count" id="child-2" checked="true"/>
+								<label for="child-2">2</label>
+								<input type="radio" name="child-count" id="child-3" checked="true"/>
+								<label for="child-3">3</label>
+								<input type="radio" name="child-count" id="child-4" checked="true"/>
+								<label for="child-4">4</label>
+								<input type="radio" name="child-count" id="child-5" checked="true"/>
+								<label for="child-5">5</label>
+							</div>
+						</div>
 					</div>
 				</div>
+				<button class="button primary">Распланировать мои экскурсии</button>
+				<a href="#" class="button">Каталог экскурсий</a>
+				<p class="text-center gray">Нужна помощь в подборе?</p>
+				<a href="#" class="button">Связаться с нами</a>
 			</div>
 			<div class="slider-container">
 				<div class="slider">

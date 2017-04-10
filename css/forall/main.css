@@ -302,6 +302,7 @@ footer .basket{
 	text-decoration:none;
 	border-radius:18px;
 	box-shadow:inset 0 0 0 2px #fff;
+	border:none;
 }
 
 .button.primary{
