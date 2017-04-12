@@ -222,8 +222,8 @@
 	float:left;
 }
 .excursion-form h2,.excursion-form .h2{
-	margin-top:.433em;
-	margin-bottom:.367em;
+	margin-top:.37em;
+	margin-bottom:.16em;
 }
 .excursion-form .date{
 	border:solid 1px #999;
@@ -269,6 +269,7 @@
 	background:-webkit-linear-gradient(top, ellipse cover,  #f5f6f6 0%,#e8eaeb 100%);
 	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);
 	cursor:pointer;
+	margin-bottom:14px;
 }
 .radio-select label,.excursion-form .button:not(.primary),.people-count{
 	color:#999;
@@ -300,7 +301,27 @@
 	display:block;
 	line-height:2.1em;
 	width:100%;
-	margin-bottom:.833em;
+	margin-bottom:.7em;
+}
+
+.excursion-form .button.primary{
+	box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.excursion-form .button.search{
+	margin-bottom:4px;
+}
+.excursion-form p{
+	margin-bottom:3px;
+}
+.excursion-form .button.search:after{
+	content:'';
+	display:inline-block;
+	width:27px;
+	height:1.2em;
+	background:url(/images/forall/excursion-form-search.png) no-repeat 0 50%;
+	margin-left:10px;
+	vertical-align:middle;
 }
 
 .people-count{

@@ -53,4 +53,8 @@
 	));
 	
 	$(".country-select").selectmenu();
+	
+	$(".nav-switch").on("click",function(){
+		$(".mob-nav-container").show();
+	});
 });

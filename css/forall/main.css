@@ -82,6 +82,9 @@ header .container-fluid{
 	overflow:hidden;
 }
 header .info{text-align:center;}
+header {
+	white-space:nowrap;
+}
 header .info>div{display:inline-block;text-align:left;}
 header nav{
 	background: #43b4fb;
@@ -146,6 +149,9 @@ header .search-form input,.login-form input{
 	text-align:center;
 	font-style:italic;
 }
+.col-md-5 .login-form{
+	margin-left:-15px;
+}
 .login-form i{margin-right:5px;}
 .login-form input+i{margin-left:5%;}
 .login-form input{margin-bottom:14px;width:100px;}
@@ -186,6 +192,54 @@ header .search-form input,.login-form input{
 	margin:14px 0 23px 0;
 	float:left;
 	background:url(/images/forall/logo.png) no-repeat 0 0;
+}
+@media (min-width: 768px) {
+	.mob{
+		display:none;
+	}
+}
+@media (max-width: 767px) {
+	#logo {
+	  margin-left:auto;
+	  margin-right:auto;
+	  float:none
+	}
+	header .basket,header .basket+.container-fluid{
+		display:none;
+	}
+	.nav-switch{
+		position:absolute;
+		top:28px;
+		left:30px;
+		width:40px;
+		height:40px;
+		border:solid 2px #fff;
+		border-radius:20px;
+		opacity:.5;
+	}
+	.nav-switch:hover,.nav-switch:active{
+			opacity:1;
+	}
+	.nav-switch:before{
+		content:'';
+		position:absolute;
+		margin:9px auto;
+		left:0;
+		right:0;
+		display:block;
+		width:24px;
+		border-top:solid 3px #fff;
+		box-shadow:0 8px 0 #fff,0 16px 0 #fff;
+	}
+	.mob-nav-container{
+		display:none;
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		background:rgba(0,0,0,.5);
+	}
 }
 
 footer{
