@@ -42,6 +42,16 @@
 			}
 		]
 	});
+	$(".slider").slick({
+		infinite:true,
+		slidesToScroll:1,
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		dots:true,
+		prevArrow:"<button class='slick-prev'/>",
+		nextArrow:"<button class='slick-next'/>",
+	});
 	
     $(".date").datepicker($.extend(
 		{
@@ -56,5 +66,8 @@
 	
 	$(".nav-switch").on("click",function(){
 		$(".mob-nav-container").fadeToggle();
+	});
+	$(".basket-switch").on("click",function(){
+		$(".mob-basket-container").fadeToggle();
 	});
 });

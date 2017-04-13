@@ -13,10 +13,10 @@ h1, .h1{
 a{text-decoration:underline;}
 nav a,nav a:hover{text-decoration:none;color:#fff;}
 
-#body{margin:0  0 -270px;min-height:100%;height:auto !important;height:100%;}
+#body{}
 .block>*{max-width:1560px;padding:0 30px;margin-right:auto;margin-left:auto;}
 
-#body:after{content:'';display:block;height:270px;}
+
 
 .block{
 	overflow:hidden;
@@ -30,6 +30,7 @@ nav a,nav a:hover{text-decoration:none;color:#fff;}
 }
 
 .gray{color:#323232;}
+.orange{color:#ff5400;}
 
 .lblue{	background:#8cd3ff;}
 .llblue{background:#bde6ff;}
@@ -377,10 +378,8 @@ header .search-form input,.login-form input{
 footer{
 	margin:0 auto;
 	position:relative;
-	margin-top:-270px;
 	background:#0264b3;
 	color:#fff;
-	height:270px;
 }
 
 footer .nav{
@@ -499,6 +498,17 @@ footer .basket{
 	box-shadow:none;
 }
 
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border:solid 2px #009dff;
+  border-radius:10px;
+  width: auto;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
 @media (min-width: 768px) {
 	.mob{
 		display:none;
@@ -510,21 +520,51 @@ footer .basket{
 	  margin-right:auto;
 	  float:none
 	}
+	header{
+		position:fixed;
+		top:0;
+		right:0;
+		left:0;
+		z-index:10;
+	}
+	header+*{
+		margin-top:104px;
+	}
 	header .basket,header .basket+.container-fluid,.block-nav,footer nav{
 		display:none;
 	}
-	header .nav-switch{
+	header .nav-switch,header .basket-switch{
 		position:absolute;
 		top:28px;
-		left:30px;
 		width:40px;
 		height:40px;
 		border:solid 2px #fff;
 		border-radius:20px;
+		
+	}
+	header .nav-switch{
 		opacity:.5;
+		left:30px;
+	}
+	header .basket-switch{
+		right:30px;
+		border-color:#89d2ff;
+		background:url(/images/forall/basket-mobile.png) no-repeat 50% 50%;
 	}
 	header .nav-switch:hover,.nav-switch:active{
 			opacity:1;
+	}
+	header .basket-switch span{
+		display:block;
+		position:absolute;
+		top:-15px;
+		right:-15px;
+		height:30px;
+		width:30px;
+		text-align:center;
+		border-radius:15px;
+		background:#ff5400;
+		line-height:30px;
 	}
 	header .nav-switch:before{
 		content:'';
@@ -537,7 +577,7 @@ footer .basket{
 		border-top:solid 3px #fff;
 		box-shadow:0 8px 0 #fff,0 16px 0 #fff;
 	}
-	.mob-nav-container{
+	.mob-nav-container,.mob-basket-container{
 		display:none;
 		z-index:777;
 		position:fixed;
@@ -547,17 +587,34 @@ footer .basket{
 		left:0;
 		background:rgba(0,0,0,.5);
 	}
-	.mob-nav{
+	.mob-nav,.mob-basket{
 		position:absolute;
 		top:0;
-		right:30%;
-		bottom:0;
-		left:0;
 		background: #fff;
 		background: -moz-linear-gradient(top,  #fff 0%, #cfd2d4 100%);
 		background: -webkit-linear-gradient(top,  #fff 0%,#cfd2d4 100%);
 		background: linear-gradient(to bottom,  #fff 0%,#cfd2d4 100%);
 
+	}
+	.mob-nav{
+		right:30%;
+		bottom:0;
+		left:0;		
+	}
+	.mob-basket{
+		right:0;
+		padding:40px;
+		text-align:center;
+	}
+	.mob-basket .br{
+		border-bottom:solid 2px #aeafb1;
+		margin:20px -20px;
+	}
+	.mob-basket .orange{
+		font-weight:700;
+	}
+	.mob-basket .button{
+		padding:0 10px;
 	}
 	.mob-nav ul{
 		display:block;
@@ -574,11 +631,9 @@ footer .basket{
 		padding:.7em;
 		text-decoration:none;
 	}
-	.mob-nav .nav-switch{
+	.mob-nav .nav-switch,.mob-basket .basket-switch{
 		position:absolute;
 		top:50px;
-		right:0;
-		margin-right:-23px;
 		width:45px;
 		height:45px;
 		border-radius:23px;
@@ -586,7 +641,15 @@ footer .basket{
 		box-shadow:0 0 10px #000;
 		text-align:center;
 	}
-	.mob-nav .nav-switch:before{
+	.mob-nav .nav-switch{
+		right:0;
+		margin-right:-23px;
+	}
+	.mob-basket .basket-switch{
+		left:0;
+		margin-left:-23px;
+	}
+	.mob-nav .nav-switch:before,.mob-basket .basket-switch:before{
 		content:'×';
 		position:relative;
 		top:2px;
@@ -599,6 +662,38 @@ footer .basket{
 		padding:0 30px;
 	}
 
+	footer .search-form {
+		float:none;
+		margin-right:40px;
+		margin-left:40px;
+	}
+	footer .search-form input{
+		width:100%;
+	}
+	footer .contacts{
+		overflow:hidden;
+		padding-left:50px;
+	}
+	footer .contacts span{
+		display:inline-block;
+		font-size:14px;
+		color:#bde6ff;
+		float:left;
+	}
+	footer .contacts .phone{
+		line-height:18px;
+		margin:6px 10px 0 0;
+	}
+	footer .col-lg-4:last-child{
+		display:none;
+	}
+	
+	.slider{
+		height:340px;
+	}
+	.slick-dots{
+		transform:scale(2);
+	}
 }
 
 

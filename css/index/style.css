@@ -60,13 +60,13 @@
 }
 .excursions .price{
 	position:absolute;
-	top:30px;
+	top:20px;
 	left:15px;
 	color:#fff;
 	background:#ff4800;
-	font-size:60px;
-	width:170px;
-	line-height:80px;
+	font-size:37px;
+	width:110px;
+	line-height:50px;
 	z-index:1;
 }
 .excursions .price:after{
@@ -89,7 +89,7 @@
 .excursions .info{
 	color:#fff;
 }
-.excursions .info h2{
+.excursions .info h4{
 	color:#fff;
 	font-weight:700;
 	font-family:roboto;
@@ -102,20 +102,29 @@
 .excursions .subinfo{
 	font-size:14px;
 	overflow:hidden;
-	padding:0 30px 10px;
+	padding:0 15px 0;
 }
 
-.excursions .subinfo>div:first-child{width:55%;float:left;}
-.excursions .subinfo>div:last-child{width:40%;float:right;}
-.excursions .week{white-space:nowrap;margin-bottom:10px;}
+.excursions .subinfo>div:first-child{width:65%;float:left;}
+.excursions .subinfo>div:last-child{width:33%;float:right;}
+.excursions .week{
+	white-space:nowrap;
+	word-spacing:-2px;
+}
 .excursions .week span,.excursions .week em{
 	display:inline-block;
 	color:#96a1a9;
 	border:solid 1px;
 	border-radius:13px;
-	line-height:24px;
-	width:26px;
+	line-height:20px;
+	width:22px;
+	font-size:13px;
 	font-style:normal;
+	margin-top:5px;
+}
+.excursions p{
+	margin-top:-4px;
+	margin-bottom:0;
 }
 .excursions .week span{
 	border-color:#fff;
@@ -126,7 +135,8 @@
 .excursions .timeinfo{
 	text-align:left;
 	padding-left:35px;
-	background:url(/images/index/excursions-clock.png) no-repeat 0 50%;
+	line-height:1.2em;
+	background:url(/images/index/excursions-clock-s.png) no-repeat 0 50%;
 }
 .excursions .rating{
 	display:inline-block;
@@ -134,7 +144,7 @@
 	padding-top:16px;
 	vertical-align:top;
 	width:92px;
-	margin-bottom:13px;
+	margin-bottom:3px;
 }
 .excursions .rating:before,.excursions .rating:after{
 	content:'';
@@ -161,26 +171,160 @@
 	line-height:30px;
 	text-align:left;
 }
-.excursions .type.group{background-image:url(/images/index/excursions-group.png);}
+.excursions .type.group{background-image:url(/images/index/excursions-group-s.png);}
+
+.excursions .timeinfo,.excursions .type{
+	margin-left:15px;
+	font-size:14px;
+}
 
 .excursions .button{
-	margin:15px 2px;
-	width:40%;
-	line-height:36px;
+	margin:10px 2px;
+	width:43%;
+	line-height:29px;
 }
 .excursions .buttons{
 	background:#002d49;
 	border-radius:0 0 10px 10px;
 }
 
+/* .excursions{ */
+	/* text-align:center; */
+/* } */
+/* .excursions .row{ */
+	/* margin-right:-30px; */
+	/* margin-left:-30px; */
+/* } */
+/* .excursions .col-lg-4{ */
+	/* padding-right:30px; */
+	/* padding-left:30px; */
+	/* margin-bottom:40px; */
+/* } */
+/* .excursions img{ */
+	/* border-radius:10px; */
+	/* width:100%; */
+/* } */
+/* .excursions .price{ */
+	/* position:absolute; */
+	/* top:30px; */
+	/* left:15px; */
+	/* color:#fff; */
+	/* background:#ff4800; */
+	/* font-size:60px; */
+	/* width:170px; */
+	/* line-height:80px; */
+	/* z-index:1; */
+/* } */
+/* .excursions .price:after{ */
+	/* content:''; */
+	/* display:block; */
+	/* position:absolute; */
+	/* border-top:solid 5px #c03600; */
+	/* border-left:solid 15px transparent; */
+	/* top:100%; */
+	/* left:0; */
+/* } */
+/* .excursions .info{ */
+	/* position:absolute; */
+	/* right:30px;left:30px; */
+	/* bottom:0; */
+	/* background:rgba(0,45,73,.7); */
+	/* border-radius:0 0 10px 10px; */
+/* } */
+/* .excursions .info{ */
+	/* color:#fff; */
+/* } */
+/* .excursions .info h2{ */
+	/* color:#fff; */
+	/* font-weight:700; */
+	/* font-family:roboto; */
+	/* text-transform:uppercase; */
+	/* margin-bottom:0; */
+/* } */
+/* .excursions .info a{ */
+	/* color:#fff; */
+/* } */
+/* .excursions .subinfo{ */
+	/* font-size:14px; */
+	/* overflow:hidden; */
+	/* padding:0 30px 10px; */
+/* } */
+
+/* .excursions .subinfo>div:first-child{width:55%;float:left;} */
+/* .excursions .subinfo>div:last-child{width:40%;float:right;} */
+/* .excursions .week{white-space:nowrap;margin-bottom:10px;} */
+/* .excursions .week span,.excursions .week em{ */
+	/* display:inline-block; */
+	/* color:#96a1a9; */
+	/* border:solid 1px; */
+	/* border-radius:13px; */
+	/* line-height:24px; */
+	/* width:26px; */
+	/* font-style:normal; */
+/* } */
+/* .excursions .week span{ */
+	/* border-color:#fff; */
+	/* background:#fff; */
+	/* color:#172a3b; */
+/* } */
+
+/* .excursions .timeinfo{ */
+	/* text-align:left; */
+	/* padding-left:35px; */
+	/* background:url(/images/index/excursions-clock.png) no-repeat 0 50%; */
+/* } */
+/* .excursions .rating{ */
+	/* display:inline-block; */
+	/* position:relative; */
+	/* padding-top:16px; */
+	/* vertical-align:top; */
+	/* width:92px; */
+	/* margin-bottom:13px; */
+/* } */
+/* .excursions .rating:before,.excursions .rating:after{ */
+	/* content:''; */
+	/* position:absolute; */
+	/* display:block; */
+	/* top:0; */
+	/* right:0; */
+	/* bottom:0; */
+	/* left:0; */
+	/* opacity:.5; */
+	/* background:url(/images/index/excursions-star.png) repeat-x 0 0; */
+/* } */
+/* .excursions .rating:after{opacity:1;} */
+/* .excursions .rating.r1:after{width:19px;} */
+/* .excursions .rating.r2:after{width:38px;} */
+/* .excursions .rating.r3:after{width:57px;} */
+/* .excursions .rating.r4:after{width:76px;} */
+/* .excursions .rating.r5:after{width:92px;} */
+
+/* .excursions .type{ */
+	/* padding-left:40px; */
+	/* background-repeat:no-repeat; */
+	/* background-position:0 50%; */
+	/* line-height:30px; */
+	/* text-align:left; */
+/* } */
+/* .excursions .type.group{background-image:url(/images/index/excursions-group.png);} */
+
+/* .excursions .button{ */
+	/* margin:15px 2px; */
+	/* width:40%; */
+	/* line-height:36px; */
+/* } */
+/* .excursions .buttons{ */
+	/* background:#002d49; */
+	/* border-radius:0 0 10px 10px; */
+/* } */
 
 .button.buy:before{
 	content:'';
 	display:inline-block;
 	width:27px;
-	height:36px;
-	background:url(/images/index/excursions-basket.png) no-repeat 0 40%;
-	margin-right:10px;
+	height:29px;
+	background:url(/images/index/excursions-basket-s.png) no-repeat 0 40%;
+	/* margin-right:10px; */
 	vertical-align:middle;
 }
 
