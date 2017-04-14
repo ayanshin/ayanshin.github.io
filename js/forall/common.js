@@ -62,12 +62,64 @@
 		$.datepicker.regional['ru']
 	));
 	
-	$(".country-select").selectmenu();
-	
 	$(".nav-switch").on("click",function(){
 		$(".mob-nav-container").fadeToggle();
 	});
 	$(".basket-switch").on("click",function(){
 		$(".mob-basket-container").fadeToggle();
 	});
+	
+	var $select=$(".country-select"),
+		$fakeSelect=$(".country-select-span"),
+		$fakeSelectCount = $("<span/>"),
+		$values = $select.find("option:not(:disabled)"),
+		$selectInfo = $(".countries");
+	$select.hide();
+	$fakeSelect.append(" ").append($fakeSelectCount).show();
+	$fakeSelect.on("click",function(){
+		var	$dialog = $("<div class='white-popup countries-select'/>"),
+			$button = $("<div><button class='button primary'>Применить</button></div>");
+		$values.each(function(){
+			var $span = $("<span data-val='"+$(this).val()+"'><img src='"+$(this).data("image")+"' alt='"+$(this).html()+"'/>"+$(this).html()+"</span>");
+			if($(this).prop("selected")){
+				$span.addClass("active");
+			}
+			$dialog.append($span);
+		});
+		$dialog.on("click","span",function(){
+			var $clicked = $(this),
+				$option = $select.find("option[value='"+$clicked.data("val")+"']");
+			if($clicked.hasClass("active")){
+				$option.prop("selected",false);
+			}else{
+				$option.prop("selected",true);
+			}
+			$clicked.toggleClass("active");
+		});
+		
+		$button.on("click","button",function(){
+			$.magnificPopup.close();
+			
+		});
+		$dialog.append($button);
+		$.magnificPopup.open({
+			items: {
+				src: $dialog,
+				type: 'inline'
+			},
+			callbacks: {
+				beforeClose: function() {
+					$select.trigger("change");
+				}
+			}
+		});
+	});
+	$select.on("change",function(){
+		$selectInfo.html("");
+		$select.find("option:selected").each(function(){
+			$selectInfo.append("<img src='"+$(this).data("image")+"' alt='"+$(this).html()+"' title='"+$(this).html()+"'/> ");
+		});
+		$fakeSelectCount.html($select.find("option:selected").length);
+	});
+	$select.trigger("change");
 });

@@ -7,6 +7,7 @@
     <title>EuroComp</title>
     <link rel="stylesheet" href="/css/modules/bootstrap.css">
     <link rel="stylesheet" href="/css/modules/slick.css">
+    <link rel="stylesheet" href="/css/modules/mfp.css">
     <link rel="stylesheet" href="/css/modules/jquery-ui.css">
     <link rel="stylesheet" href="/css/forall/fonts.css">
     <link rel="stylesheet" href="/css/forall/slick-theme.css">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="/css/index/style.css">
     <script src="/js/modules/jquery.js"></script>
     <script src="/js/modules/slick.js"></script>
+    <script src="/js/modules/mfp.js"></script>
     <script src="/js/modules/bootstrap.js"></script>
     <script src="/js/modules/jquery-ui.js"></script>
     <script src="/js/forall/common.js"></script>
@@ -78,40 +80,50 @@
 			<div class="excursion-form fluid-container">
 				<h2>ПОИСК ЭКСКУРСИИ</h2>
 				<div class="countries">
-					<a href="#" class="czech"></a>
-					<a href="#" class="gemrany"></a>
-					<a href="#" class="austria"></a>
-					<a href="#" class="italy"></a>
 				</div>
 				<div class="text-center country-container">
+					<div class="country-select-span">Выбор страны</div>
 					<select name="country" class="country-select" multiple="multiple">
-						<option disabled selected>Выбор страны</option>
-						<option>Австрия</option>
-						<option>Албания</option>
-						<option>Андорра</option>
-						<option>Белоруссия</option>
-						<option>Бельгия</option>
-						<option>Болгария</option>
-						<option>Ватикан</option>
-						<option>Великобритания</option>
-						<option>Венгрия</option>
-						<option>Германия</option>
-						<option>Греция</option>
-						<option>Дания</option>
-						<option>Ирландия</option>
-						<option>Исландия</option>
-						<option>Испания</option>
-						<option>Италия</option>
-						<option>Латвия</option>
-						<option>Литва</option>
-						<option>Лихтенштейн</option>
-						<option>Люксембург</option>
-						<option>Македония</option>
-						<option>Мальта</option>
-						<option>Молдавия</option>
-						<option>Монако</option>
-						<option>Нидерланды</option>
-						<option>Норвегия</option>
+						<option value="Albania" data-image="/images/forall/countries/Albania.png">Албания</option>
+						<option value="Great Britain" data-image="/images/forall/countries/Great Britain.png">Англия</option>
+						<option value="Andorra" data-image="/images/forall/countries/Andorra.png">Андорра</option>
+						<option value="Austria" data-image="/images/forall/countries/Austria.png">Австрия</option>
+						<option value="Belarus" data-image="/images/forall/countries/Belarus.png">Белоруссия</option>
+						<option value="Belgium" data-image="/images/forall/countries/Belgium.png">Бельгия</option>
+						<option value="Bosnia and Herzegovina" data-image="/images/forall/countries/Bosnia-Herzegovina.png">Босния и Герцеговина</option>
+						<option value="Bulgaria" data-image="/images/forall/countries/Bulgaria.png">Болгария</option>
+						<option selected value="Czech Republic" data-image="/images/forall/countries/Czech Republic.png">Чехия</option>
+						<option value="Denmark" data-image="/images/forall/countries/Denmark.png">Дания</option>
+						<option value="Estonia" data-image="/images/forall/countries/Estonia.png">Эстония</option>
+						<option value="Finland" data-image="/images/forall/countries/Finland.png">Финляндия</option>
+						<option value="France" data-image="/images/forall/countries/France.png">Франция</option>
+						<option selected value="Germany" data-image="/images/forall/countries/Germany.png">Германия</option>
+						<option value="Greece" data-image="/images/forall/countries/Greece.png">Греция</option>
+						<option selected value="Hungary" data-image="/images/forall/countries/Hungary.png">Венгрия</option>
+						<option value="Iceland" data-image="/images/forall/countries/Iceland.png">Исландия</option>
+						<option value="Ireland" data-image="/images/forall/countries/Ireland.png">Ирландия</option>
+						<option value="Italy" data-image="/images/forall/countries/Italy.png">Италия</option>
+						<option value="Latvia" data-image="/images/forall/countries/Latvia.png">Латвия</option>
+						<option value="Liechtenstein" data-image="/images/forall/countries/Liechtenstein.png">Лихтенштейн</option>
+						<option value="Lithuania" data-image="/images/forall/countries/Lithuania.png">Литва</option>
+						<option value="Luxemburg" data-image="/images/forall/countries/Luxemburg.png">Люксембург</option>
+						<option value="Macedonia" data-image="/images/forall/countries/Macedonia.png">Македония</option>
+						<option value="Malta" data-image="/images/forall/countries/Malta.png">Мальта</option>
+						<option value="Moldavia" data-image="/images/forall/countries/Moldavia.png">Молдавия</option>
+						<option value="Monaco" data-image="/images/forall/countries/Monaco.png">Монако</option>
+						<option value="Montenegro" data-image="/images/forall/countries/Montenegro.png">Черногория</option>
+						<option value="Netherlands" data-image="/images/forall/countries/Netherlands.png">Нидерланды</option>
+						<option value="Norway" data-image="/images/forall/countries/Norway.png">Норвегия</option>
+						<option value="Poland" data-image="/images/forall/countries/Poland.png">Польша</option>
+						<option value="Portugal" data-image="/images/forall/countries/Portugal.png">Португалия</option>
+						<option value="Rumania" data-image="/images/forall/countries/Rumania.png">Румыния</option>
+						<option value="Serbia" data-image="/images/forall/countries/Serbia.png">Сербия</option>
+						<option value="Slovakia" data-image="/images/forall/countries/Slovakia.png">Словакия</option>
+						<option value="Slovenia" data-image="/images/forall/countries/Slovenia.png">Словения</option>
+						<option value="Spain" data-image="/images/forall/countries/Spain.png">Испания</option>
+						<option value="Sweden" data-image="/images/forall/countries/Sweden.png">Швеция</option>
+						<option value="Switzerland" data-image="/images/forall/countries/Switzerland.png">Швейцария</option>
+						<option value="Ukraine" data-image="/images/forall/countries/Ukraine.png">Украина</option>
 					</select>
 				</div>
 				<div class="radio-select">
