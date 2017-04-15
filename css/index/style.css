@@ -339,17 +339,3 @@
 	margin-left:10px;
 }
 
-.shadow-box{
-	position:relative;
-}
-.shadow-box:before,.shadow-box:after{
-	content:'';
-	display:block;
-	position:absolute;
-	width:100%;
-	height:3px;
-	background:rgba(0,38,63, .18)
-}
-.shadow-box:before{top:0;}
-.shadow-box:after{bottom:0;}
-

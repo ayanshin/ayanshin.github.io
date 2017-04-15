@@ -1,4 +1,15 @@
 ﻿$(function(){
+	
+	var $form = $(".excursion-form"),
+		$select = $(".country-select"),
+		$fakeSelect = $(".country-select-span"),
+		$values = $select.first().find("option:not(:disabled)"),
+		$selectInfo = $(".countries"),
+		$slider = $(".slider"),
+		$window = $(window);
+
+
+
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
 		prevText: '&#x3c;Пред',
@@ -20,6 +31,17 @@
 	};
 	$.datepicker.setDefaults($.datepicker.regional['ru']);
 	
+    $(".date").datepicker($.extend(
+		{
+			inline: true,
+			changeYear: true,
+			changeMonth: true,
+		},
+		$.datepicker.regional['ru']
+	));
+
+
+
 	$(".date-choose>div").slick({
 		infinite:true,
 		slidesToScroll:3,
@@ -42,7 +64,8 @@
 			}
 		]
 	});
-	$(".slider").slick({
+	
+	$slider.slick({
 		infinite:true,
 		slidesToScroll:1,
 		slidesToShow: 1,
@@ -52,30 +75,20 @@
 		prevArrow:"<button class='slick-prev'/>",
 		nextArrow:"<button class='slick-next'/>",
 	});
-	
-    $(".date").datepicker($.extend(
-		{
-			inline: true,
-			changeYear: true,
-			changeMonth: true,
-		},
-		$.datepicker.regional['ru']
-	));
-	
+
+
+
 	$(".nav-switch").on("click",function(){
 		$(".mob-nav-container").fadeToggle();
 	});
 	$(".basket-switch").on("click",function(){
 		$(".mob-basket-container").fadeToggle();
 	});
+
+
 	
-	var $select=$(".country-select"),
-		$fakeSelect=$(".country-select-span"),
-		$fakeSelectCount = $("<span/>"),
-		$values = $select.find("option:not(:disabled)"),
-		$selectInfo = $(".countries");
 	$select.hide();
-	$fakeSelect.append(" ").append($fakeSelectCount).show();
+	$fakeSelect.append(" ").append("<span/>").show();
 	$fakeSelect.on("click",function(){
 		var	$dialog = $("<div class='white-popup countries-select'/>"),
 			$button = $("<div><button class='button primary'>Применить</button></div>");
@@ -116,10 +129,26 @@
 	});
 	$select.on("change",function(){
 		$selectInfo.html("");
-		$select.find("option:selected").each(function(){
+		$select.first().find("option:selected").each(function(){
 			$selectInfo.append("<img src='"+$(this).data("image")+"' alt='"+$(this).html()+"' title='"+$(this).html()+"'/> ");
 		});
-		$fakeSelectCount.html($select.find("option:selected").length);
+		$fakeSelect.children("span").html($select.first().find("option:selected").length);
+		$slider.height($(".excursion-form").height())
 	});
 	$select.trigger("change");
+
+
+
+	$window.on("scroll",function(){
+		if($window.scrollTop()>104){
+			$("header").addClass("fixed");
+		}else{
+			$("header").removeClass("fixed");
+		}
+		if($window.scrollTop()>740){
+			$(".excursion-form-header").addClass("fixed");
+		}else{
+			$(".excursion-form-header").removeClass("fixed");
+		}
+	});
 });
