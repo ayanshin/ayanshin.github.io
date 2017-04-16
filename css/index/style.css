@@ -328,6 +328,10 @@
 	vertical-align:middle;
 }
 
+.button.buy:hover:before{
+	background-image:url(/images/index/excursions-basket-s-hover.png);
+}
+
 .button.more:after{
 	content:'';
 	display:inline-block;

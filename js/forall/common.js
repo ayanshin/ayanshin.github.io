@@ -8,8 +8,6 @@
 		$slider = $(".slider"),
 		$window = $(window);
 
-	alert($window.width());
-
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
 		prevText: '&#x3c;Пред',
@@ -69,8 +67,8 @@
 		infinite:true,
 		slidesToScroll:1,
 		slidesToShow: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
+		//autoplay: true,
+		//autoplaySpeed: 2000,
 		dots:true,
 		prevArrow:"<button class='slick-prev'/>",
 		nextArrow:"<button class='slick-next'/>",
@@ -133,7 +131,7 @@
 			$selectInfo.append("<img src='"+$(this).data("image")+"' alt='"+$(this).html()+"' title='"+$(this).html()+"'/> ");
 		});
 		$fakeSelect.children("span").html($select.first().find("option:selected").length);
-		$slider.height($(".excursion-form").height())
+		$slider.find(".slide").height($(".excursion-form").height())
 	});
 	$select.trigger("change");
 
