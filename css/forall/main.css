@@ -70,14 +70,16 @@ i.icon-pass{background-image:url(/images/forall/key.png);}
 }
 
 header{
-	position:relative;
+	position:absolute;
+	right:0;
+	left:0;
 	color:#fff;
 	background: #1a8cd5;
 	background: -moz-radial-gradient(center, ellipse cover,  #1a8cd5 0%, #036cbd 100%);
 	background: -webkit-radial-gradient(center, ellipse cover,  #1a8cd5 0%,#036cbd 100%);
 	background: radial-gradient(ellipse at center,  #1a8cd5 0%,#036cbd 100%);
 	overflow:hidden;
-	z-index:20;
+	z-index:200;
 }
 header a{color:#fff;}
 header .container-fluid{
@@ -98,15 +100,17 @@ header nav{
 	line-height:0;
 	font-weight:700;
 }
-header.fixed>*:first-child{
-	padding-bottom:28px;
-}
-header.fixed nav{
+header.fixed{
 	position:fixed;
 	top:0;
 	right:0;
 	left:0;
+	box-shadow:0 0 10px #000;
 }
+header.fixed .block-info{
+	display:none;
+}
+
 header .nav{
 	display:inline-block;
 	float:none;
@@ -207,11 +211,7 @@ header .search-form input,.login-form input{
 
 .excursion-form-header{
 	display:none;
-	position:fixed;
-	top:28px;
-	right:0;
-	left:0;
-	overflow:visible !important;
+	position:relative;
 	background:#fff;
 	color:#002d49;
 	z-index:19;
@@ -242,10 +242,6 @@ header .search-form input,.login-form input{
 	width:1px;
 	background:#007dcc;
 	left:40%;
-}
-.excursion-form-header.fixed{
-	display:block;
-	overflow:hidden;
 }
 .excursion-form-header form{
 	display:table;
@@ -295,6 +291,7 @@ header .search-form input,.login-form input{
 .date-start,.date-end{width:11.5%;}
 .count-adult,.count-child{width:7.73%}
 .excursion-form-header .radio-select{width:11.2%;}
+.excursion-form-header .country-container{width:13.5%;}
 
 .excursion-form-header .basket{
 	margin-top:3px;
@@ -693,13 +690,19 @@ footer .basket{
 		top:0;
 		right:0;
 		left:0;
-		z-index:10;
 	}
 	header+*{
 		margin-top:104px;
 	}
-	header .basket,header .basket+.container-fluid,.block-nav,footer nav{
-		display:none;
+	header.fixed .block-info{
+		display:block;
+	}
+	header .basket,
+	header .basket+.container-fluid,
+	.block-nav,
+	footer nav,
+	.excursion-form-header{
+		display:none !important;
 	}
 	header .nav-switch,header .basket-switch{
 		position:absolute;
@@ -857,7 +860,7 @@ footer .basket{
 	}
 	
 	.slider{
-		height:340px;
+		height:340px !important;
 	}
 	.slick-dots{
 		transform:scale(2);

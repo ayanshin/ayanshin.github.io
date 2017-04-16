@@ -8,7 +8,7 @@
 		$slider = $(".slider"),
 		$window = $(window);
 
-
+	alert($window.width());
 
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
@@ -145,10 +145,16 @@
 		}else{
 			$("header").removeClass("fixed");
 		}
-		if($window.scrollTop()>740){
-			$(".excursion-form-header").addClass("fixed");
+		if($window.scrollTop()>600){
+			$(".excursion-form-header").slideDown();
 		}else{
-			$(".excursion-form-header").removeClass("fixed");
+			$(".excursion-form-header").slideUp();
 		}
+	});
+
+
+
+	$(".radio-select").on("click","label",function(){
+		$(this).prev("input").click();
 	});
 });
