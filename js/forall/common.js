@@ -155,4 +155,9 @@
 	$(".radio-select").on("click","label",function(){
 		$(this).prev("input").click();
 	});
+	
+	$(".excursions .col-lg-4").on("click",".more",function(){
+		$(this).parents(".col-lg-4").toggleClass("active");
+		return false;
+	});
 });

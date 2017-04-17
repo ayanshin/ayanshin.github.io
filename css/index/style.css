@@ -54,6 +54,18 @@
 	padding-left:30px;
 	margin-bottom:40px;
 }
+
+.excursions .col-lg-4.active:after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:100%;
+	right:30px;
+	left:30px;
+	height: 40px; 
+	background:url(/images/index/excursions-arrow.png) no-repeat 0 0;
+	background-size:100%;
+}
 .excursions img{
 	border-radius:10px;
 	width:100%;
@@ -82,12 +94,14 @@
 	position:absolute;
 	right:30px;left:30px;
 	/* right:15px;left:15px; */
+	color:#fff;
 	bottom:0;
 	background:rgba(0,45,73,.7);
 	border-radius:0 0 10px 10px;
 }
-.excursions .info{
-	color:#fff;
+.excursions .col-lg-4.active .info{
+	border-radius:0;
+	background:#002d49;
 }
 .excursions .info h4{
 	color:#fff;
