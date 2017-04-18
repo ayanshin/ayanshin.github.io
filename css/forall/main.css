@@ -10,14 +10,17 @@ h1, .h1{
     margin-bottom: 30px;
 }
 
-a{text-decoration:underline;}
+a{text-decoration:underline;color:#198dd4;} 
 nav a,nav a:hover{text-decoration:none;color:#fff;}
+
+button,input,textarea{
+	outline:0;
+}
 
 #body{
 	padding-top:132px;
 }
 .block>*{max-width:1560px;padding:0 30px;margin-right:auto;margin-left:auto;}
-
 
 
 .block{
@@ -30,9 +33,16 @@ nav a,nav a:hover{text-decoration:none;color:#fff;}
 .block.bpadding{
 	padding-bottom:20px;
 }
+.block.gray{
+	background:#dcdcdc;
+	color:inherit;
+}
 
 .gray{color:#323232;}
 .orange{color:#ff5400;}
+.italic{
+	font-style:italic;
+}
 
 .lblue{	background:#8cd3ff;}
 .llblue{background:#bde6ff;}
@@ -652,11 +662,11 @@ footer .basket{
 	color:#fff;
 	text-align:center;
 	text-decoration:none;
-	border-radius:18px;
+	border-radius:22px;
 	border:none;
 	outline:0 !important;
 }
-.button:hover{
+.button:hover,.button:focus{
 	text-decoration:none;
 	box-shadow:0 0 6px rgba(0,0,0,.4);
 }
@@ -679,11 +689,16 @@ footer .basket{
 	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);		
 }
 .button.blue{
-	color:#fff;
 	background: #48b5fa;
 	background: -moz-linear-gradient(top,  #48b5fa 0%, #2a9de7 100%);
 	background: -webkit-linear-gradient(top,  #48b5fa 0%,#2a9de7 100%);
 	background: linear-gradient(to bottom,  #48b5fa 0%,#2a9de7 100%);
+}
+.button.red{
+	background:#ff3a3a;
+}
+.button.red:hover{
+	color:#fff;
 }
 .button.white,.button.white:hover{
 	color:#fff;

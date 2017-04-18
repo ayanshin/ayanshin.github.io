@@ -1,0 +1,148 @@
+﻿h2{
+	font-weight:400;
+	font-family:"roboto";
+	margin:25px 0;
+}
+
+.basket-table{
+	display:table;
+	width:100%;
+	margin:30px 0;
+	font-size:18px;
+}
+.basket-table dt,.basket-table dd{
+	line-height:24px;
+}
+.big{
+	font-weight:700;
+	font-size:20px;
+}
+.basket-item{
+	display:table-row;
+}
+.basket-item>*{
+	display:table-cell;
+	border-top:solid 2px #999;
+	vertical-align:middle;
+}
+.basket-item dt{
+	font-weight:700;
+}
+.basket-item>.basket-sum{
+	background:#f7f5f5;
+	font-size:16px;
+	padding:5px 20px 10px;
+	border-top:dotted 2px #999;
+	border-right:solid 1px #cac8c9;
+	border-left:solid 1px #cac8c9;
+	white-space:nowrap;
+	width:400px;
+}
+.basket-action{min-width:50px;text-align:center;}
+.basket-item:last-child>.basket-sum{
+	padding-bottom:20px;
+	background-position:0 100%;
+	background-repeat:repeat-x;
+	background-image:url(/images/basket/checkout-b.png);
+}
+.basket-item:first-child>.basket-sum:before{
+	content:'';
+	display:block;
+	height:46px;
+	margin:-53px -54px 6px;
+	background:
+		url(/images/basket/checkout-l.png) no-repeat 0 0,
+		url(/images/basket/checkout-r.png) no-repeat 100% 0,
+		url(/images/basket/checkout-m.png) repeat-x 0 0;
+}
+.basket-item>.basket-sum dt{
+	float:left;
+	width:170px;
+}
+.basket-item.total>.basket-sum{
+	font-size:18px;
+}
+.basket-item.total>.basket-sum dt{
+	width:230px;
+}
+.basket-item.total>.basket-sum .big{
+	font-size:22px;
+}
+.basket-item.total>.basket-sum .small{
+	font-size:16px;
+}
+.basket-table .button.button-small{
+	display:inline-block;
+	line-height:32px;
+	width:32px;
+	font-size:25px;
+}
+.basket-table .button.trash{
+	line-height:44px;
+	padding:0 40px 0 80px;
+	font-size:24px;
+	margin-right:-100em;
+	background-repeat:no-repeat;
+	background-position:40px 50%;
+	background-image:url(/images/basket/basket-trash.png);
+}
+
+.basket-form{
+	font-size:21px;
+}
+.basket-form{
+	overflow:hidden;
+}
+.basket-form .row{
+	position:relative;
+}
+
+.basket-form label{
+	display:block;
+	max-width:150%;
+	margin-right:-25px;
+	text-align:right;
+	line-height:44px;
+}
+.basket-form input{
+	border:solid 1px #999;
+	border-radius:10px;
+	display:block;
+	padding:6px 20px;
+	margin-bottom:30px;
+	width:100%;
+}
+.basket-form button{
+	display:block;
+	line-height:44px;
+	height:44px;
+	margin-bottom:10px;
+}
+
+.payments:after{
+	content:'';
+	display:block;
+	width:115px;
+	height:34px;
+	background:url(/images/basket/basket-payments.png) no-repeat 0 0;
+	margin:10px auto;
+}
+
+@media (min-width: 768px) {
+	.basket-form button{
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		margin:auto;
+		margin-right:15px;
+	}
+	.payments:before{
+		float:right;
+		margin-left:20px;
+	}
+}
+
+.basket-form .small{
+	font-size:14px;
+}

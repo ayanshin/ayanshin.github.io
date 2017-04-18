@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<meta content='width=device-width, initial-scale=.65, maximum-scale=.65, user-scalable=0' name='viewport' />
+	<meta name="mobileoptimized" content="0" />
+    <title>EuroComp</title>
+    <link rel="stylesheet" href="/css/modules/bootstrap.css">
+    <link rel="stylesheet" href="/css/modules/slick.css">
+    <link rel="stylesheet" href="/css/modules/mfp.css">
+    <link rel="stylesheet" href="/css/modules/jquery-ui.css">
+    <link rel="stylesheet" href="/css/forall/fonts.css">
+    <link rel="stylesheet" href="/css/forall/slick-theme.css">
+    <link rel="stylesheet" href="/css/forall/jquery-ui.theme.css">
+    <link rel="stylesheet" href="/css/forall/main.css">
+    <link rel="stylesheet" href="/css/basket/style.css">
+    <script src="/js/modules/jquery.js"></script>
+    <script src="/js/modules/slick.js"></script>
+    <script src="/js/modules/mfp.js"></script>
+    <script src="/js/modules/bootstrap.js"></script>
+    <script src="/js/modules/jquery-ui.js"></script>
+    <script src="/js/forall/common.js"></script>
+  </head>
+  <body>
+	<div id="body">
+		<header>
+			<div class="block block-info">
+				<div>
+					<a href="#" id="logo"></a>
+					<div class="basket">
+						<span>15</span>
+						<p>На сумму: 156.123,00 $</p>
+						<a href="#" class="button primary">Корзина</a>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-7 info">
+								<div>
+									<div class="contacts">
+										<span class="phone">+ (420) 775 621 122<br/>+ (420) 775 094 014</span>
+										<span class="mail">info@eurocomp.com</span>
+									</div>
+									<form class="search-form">
+										<input type="text" value="Поиск"/>
+										<button class="button blue">Найти</button>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<form class="login-form">
+									<i class="icon-login"></i><input type="text" class="login" value="Логин"/>
+									<i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/>
+									<button class="button blue">Вход</button>
+									<a href="#">Регистрация</a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="mob nav-switch"></div>
+					<div class="basket-switch"></div>
+				</div>
+			</div>
+			<nav class="block block-nav" role="navigation">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<!--li class="active"><a href="#">Ссылка</a></li-->
+						<li><a href="#">Экскурсии по Чехии</a></li>
+						<li><a href="#">Экскурсии по Праге</a></li>
+						<li><a href="#">Экскурсии по Европе</a></li>
+						<li><a href="#">Пакеты экскурсий</a></li>
+						<li><a href="#">Трансфер</a></li>
+						<li><a href="#">Проживание</a></li>
+						<li><a href="#">Инфоцентр</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="block ">
+			<div class="fluid-container">
+				<div class="breadcrumbs">
+					<a href="/">Главная</a> > Корзина
+				</div>
+				<h1>Корзина</h1>
+				<div class="basket-table">
+					<div class="basket-item">
+						<dl class="basket-date">
+							<dt>Дата:</dt>
+							<dd>10-12-2017</dd>
+						</dl>
+						<dl class="basket-weekday">
+							<dt>День недели:</dt>
+							<dd>Воскресенье</dd>
+						</dl>
+						<dl class="basket-excursion">
+							<dt>Экскурсия:</dt>
+							<dd><a href="#">Сити Тур / обзорная экскурсия по Праге</a></dd>
+						</dl>
+						<dl class="basket-sum">
+							<dt>Взрослые:</dt>
+							<dd>2х12=24 euro</dd>
+							<dt>Дети:</dt>
+							<dd>2х10=20 euro</dd>
+							<dt>Итого:</dt>
+							<dd>52 €</dd>
+							<dt>Итого со скидкой:</dt>
+							<dd>48 €</dd>
+						</dl>
+						<dl class="basket-action">
+							<a href="#" class="button button-small red">×</a>
+						</dl>
+					</div>
+					<div class="basket-item">
+						<dl class="basket-date">
+							<dt>Дата:</dt>
+							<dd>10-12-2017</dd>
+						</dl>
+						<dl class="basket-weekday">
+							<dt>День недели:</dt>
+							<dd>Воскресенье</dd>
+						</dl>
+						<dl class="basket-excursion">
+							<dt>Экскурсия:</dt>
+							<dd><a href="#">Сити Тур / обзорная экскурсия по Праге</a></dd>
+						</dl>
+						<dl class="basket-sum">
+							<dt>Взрослые:</dt>
+							<dd>2х12=24 euro</dd>
+							<dt>Дети:</dt>
+							<dd>2х10=20 euro</dd>
+							<dt>Итого:</dt>
+							<dd>52 €</dd>
+							<dt>Итого со скидкой:</dt>
+							<dd class="orange big">48 €</dd>
+						</dl>
+						<dl class="basket-action">
+							<a href="#" class="button button-small red">×</a>
+						</dl>
+					</div>
+					<div class="basket-item total">
+						<div><a href="#" class="button red trash">Очистить корзину</a></div>
+						<div></div>
+						<div></div>
+						<dl class="basket-sum">
+							<dt>Общая сумма:</dt>
+							<dd>999 999.99 €</dd>
+							<dt>Общая сумма со скидкой:</dt>
+							<dd class="orange big">999 999.99 €</dd>
+							<span class="orange small clearfix">при оплате картой on-line</span>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block tight gray">
+			<div class="container-fluid">
+				<h2 class="orange">Оформление заказа:</h2>
+				<form class="basket-form">
+					<div class="row">
+						<div class="col-xs-4 col-md-3"><label>Ваша электронная почта*</label></div>
+						<div class="col-xs-8 col-md-3"><input type="text" placeholder="Ivanov@mail.com"/></div>
+						<div class="col-xs-4 col-md-3"><label>Телефон для связи*</label></div>
+						<div class="col-xs-8 col-md-3"><input type="text"/></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 col-md-3"><label>Имя*</label></div>
+						<div class="col-xs-8 col-md-3"><input type="text"/></div>
+						<div class="col-xs-4 col-md-3"><label>Фамилия*</label></div>
+						<div class="col-xs-8 col-md-3"><input type="text"/></div>
+					</div>
+					<div class="row">
+						<div class="col-md-3"><label>Фамилии всех туристов*</label></div>
+						<div class="col-md-9"><input type="text"/></div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<p>Оформить заказ и перейти к выбору вариантов оплаты</p>
+						</div>
+						<button class="col-md-4 col-xs-12 button blue">Оформить заказ</button>
+						<div class="col-md-8">
+							<p class="small italic">
+								Оформление заказа не накладывает никаких обязательств до момента его оплаты.
+								Оформленный заказ можно оплатить банковской картой несколькими способами.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<p>Оформить заказ со скидкой и оплатить On-line банковской картой</p>
+						</div>
+						<button class="col-md-4 col-xs-12 button primary">Оформить и оплатить</button>
+						<div class="col-md-8">
+							<p class="small italic payments">
+								Вы будете перенаправлены на безопасную страницу оплаты заказа
+								где вы сможете выбрать удобные для Вас способы оплаты услуги.
+							</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="block nav">
+			<div>
+				<form class="search-form">
+					<input type="text" value="Поиск"/>
+				</form>
+				<nav>
+					<a href="#">Экскурсии по Чехии</a>
+					<a href="#">Экскурсии по Праге</a>
+					<a href="#">Экскурсии по Европе</a>
+					<a href="#">Пакеты экскурсий</a>
+					<a href="#">Трансфер</a>
+					<a href="#">Проживание</a>
+					<a href="#">Инфоцентр</a>
+				</nav>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="contacts col-lg-4">
+						<span class="phone">+ (420) 775 621 122, <br/>+ (420) 775 094 014</span>
+						<span class="mail">info@eurocomp.com</span>
+					</div>
+					<div class="social col-lg-4">
+						<p>Мы в соцсетях:</p>
+						<a href="#" class="fb"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="in"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="ok"></a>
+						<a href="#" class="youtube"></a>
+						<a href="#" class="insta"></a>
+					</div>
+					<div class="col-lg-4">
+						<div class="basket">
+							<span>15</span>
+							<p>На сумму: 156.123,00 $</p>
+							<a href="#" class="button primary">Корзина</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="copyright">©  2017 Loremipsum.com</div>
+	</footer>
+	<div class="mob mob-nav-container">
+		<div class="mob-nav">
+			<nav>
+				<ul>
+					<li><a href="#">Экскурсии по Чехии</a></li>
+					<li><a href="#">Экскурсии по Праге</a></li>
+					<li><a href="#">Экскурсии по Европе</a></li>
+					<li><a href="#">Пакеты экскурсий</a></li>
+					<li><a href="#">Трансфер</a></li>
+					<li><a href="#">Проживание</a></li>
+					<li><a href="#">Инфоцентр</a></li>
+				</ul>
+			</nav>
+			<div class="nav-switch"></div>
+		</div>
+	</div>
+	<div class="mob mob-basket-container">
+		<div class="mob-basket">
+			В корзине<br/>
+			<span class="orange">12</span> экскурсий<br/>
+			На сумму<br/>
+			<span class="orange">155. 236, 00 €</span>
+			<div class="br"></div>
+			<a href="#" class="button primary">Оформинть заказ</a>
+			<div class="basket-switch"></div>
+		</div>
+	</div>
+  </body>
+</html>
