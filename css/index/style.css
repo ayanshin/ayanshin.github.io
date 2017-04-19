@@ -8,6 +8,11 @@
 	background: -webkit-radial-gradient(center, ellipse cover,  #fff 0%,#e6e8ea 100%);
 	background: radial-gradient(ellipse at center,  #fff 0%,#e6e8ea 100%);
 }
+@media (max-width: 767px) {
+	.excursion-form{
+		width:100%;
+	}
+}
 
 .block.advantage img{margin-bottom:20px;}
 .block.advantage .col-md-4{padding-bottom:20px;}
