@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<meta content='width=device-width, initial-scale=.65, maximum-scale=.65, user-scalable=0' name='viewport' />
+	<meta name="mobileoptimized" content="0" />
+    <title>EuroComp</title>
+    <link rel="stylesheet" href="/css/modules/bootstrap.css">
+    <link rel="stylesheet" href="/css/modules/slick.css">
+    <link rel="stylesheet" href="/css/modules/mfp.css">
+    <link rel="stylesheet" href="/css/modules/jquery-ui.css">
+    <link rel="stylesheet" href="/css/forall/fonts.css">
+    <link rel="stylesheet" href="/css/forall/slick-theme.css">
+    <link rel="stylesheet" href="/css/forall/jquery-ui.theme.css">
+    <link rel="stylesheet" href="/css/forall/main.css">
+    <link rel="stylesheet" href="/css/advanced-search/style.css">
+    <script src="/js/modules/jquery.js"></script>
+    <script src="/js/modules/slick.js"></script>
+    <script src="/js/modules/mfp.js"></script>
+    <script src="/js/modules/bootstrap.js"></script>
+    <script src="/js/modules/jquery-ui.js"></script>
+    <script src="/js/forall/common.js"></script>
+  </head>
+  <body>
+	<div id="body">
+		<header>
+			<div class="block block-info">
+				<div>
+					<a href="#" id="logo"></a>
+					<div class="basket">
+						<span>15</span>
+						<p>На сумму: 156.123,00 $</p>
+						<a href="#" class="button primary">Корзина</a>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-7 info">
+								<div>
+									<div class="contacts">
+										<span class="phone">
+											<a class="contacts-icon mobile" href="tel:420775621122"></a>
+											<a class="contacts-icon whatsapp" href="whatsapp://tel:420775621122"></a>
+											<a class="contacts-icon viber" href="viber://tel:420775621122"></a>
+											
+											+ (420) 775 621 122<br/>
+											+ (420) 775 094 014</span>
+										<span class="mail">
+											<a class="contacts-icon mail" href="mailto:info@eurocomp.com"></a>
+											info@eurocomp.com
+										</span>
+									</div>
+									<form class="search-form">
+										<input type="text" value="Поиск"/>
+										<button class="button blue">Найти</button>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<form class="login-form">
+									<i class="icon-login"></i><input type="text" class="login" value="Логин"/>
+									<i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/>
+									<button class="button blue">Вход</button>
+									<a href="#">Регистрация</a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="mob nav-switch"></div>
+					<div class="basket-switch"></div>
+				</div>
+			</div>
+			<nav class="block block-nav" role="navigation">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<!--li class="active"><a href="#">Ссылка</a></li-->
+						<li><a href="#">Экскурсии по Чехии</a></li>
+						<li><a href="#">Экскурсии по Праге</a></li>
+						<li><a href="#">Экскурсии по Европе</a></li>
+						<li><a href="#">Пакеты экскурсий</a></li>
+						<li><a href="#">Трансфер</a></li>
+						<li><a href="#">Проживание</a></li>
+						<li><a href="#">Инфоцентр</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="block gradient">
+			<div class="excursion-form advanced fluid-container">
+				<h2>Расширенный ПОИСК ЭКСКУРСИИ</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="text-center country-container">
+							<div class="countries"></div>
+							<div class="country-select-span">Выбор страны</div>
+							<select name="country" class="country-select" multiple="multiple">
+								<option value="Albania" data-image="/images/forall/countries/Albania.png">Албания</option>
+								<option value="Great Britain" data-image="/images/forall/countries/Great Britain.png">Англия</option>
+								<option value="Andorra" data-image="/images/forall/countries/Andorra.png">Андорра</option>
+								<option value="Austria" data-image="/images/forall/countries/Austria.png">Австрия</option>
+								<option value="Belarus" data-image="/images/forall/countries/Belarus.png">Белоруссия</option>
+								<option value="Belgium" data-image="/images/forall/countries/Belgium.png">Бельгия</option>
+								<option value="Bosnia and Herzegovina" data-image="/images/forall/countries/Bosnia-Herzegovina.png">Босния и Герцеговина</option>
+								<option value="Bulgaria" data-image="/images/forall/countries/Bulgaria.png">Болгария</option>
+								<option selected value="Czech Republic" data-image="/images/forall/countries/Czech Republic.png">Чехия</option>
+								<option value="Denmark" data-image="/images/forall/countries/Denmark.png">Дания</option>
+								<option value="Estonia" data-image="/images/forall/countries/Estonia.png">Эстония</option>
+								<option value="Finland" data-image="/images/forall/countries/Finland.png">Финляндия</option>
+								<option value="France" data-image="/images/forall/countries/France.png">Франция</option>
+								<option selected value="Germany" data-image="/images/forall/countries/Germany.png">Германия</option>
+								<option value="Greece" data-image="/images/forall/countries/Greece.png">Греция</option>
+								<option selected value="Hungary" data-image="/images/forall/countries/Hungary.png">Венгрия</option>
+								<option value="Iceland" data-image="/images/forall/countries/Iceland.png">Исландия</option>
+								<option value="Ireland" data-image="/images/forall/countries/Ireland.png">Ирландия</option>
+								<option value="Italy" data-image="/images/forall/countries/Italy.png">Италия</option>
+								<option value="Latvia" data-image="/images/forall/countries/Latvia.png">Латвия</option>
+								<option value="Liechtenstein" data-image="/images/forall/countries/Liechtenstein.png">Лихтенштейн</option>
+								<option value="Lithuania" data-image="/images/forall/countries/Lithuania.png">Литва</option>
+								<option value="Luxemburg" data-image="/images/forall/countries/Luxemburg.png">Люксембург</option>
+								<option value="Macedonia" data-image="/images/forall/countries/Macedonia.png">Македония</option>
+								<option value="Malta" data-image="/images/forall/countries/Malta.png">Мальта</option>
+								<option value="Moldavia" data-image="/images/forall/countries/Moldavia.png">Молдавия</option>
+								<option value="Monaco" data-image="/images/forall/countries/Monaco.png">Монако</option>
+								<option value="Montenegro" data-image="/images/forall/countries/Montenegro.png">Черногория</option>
+								<option value="Netherlands" data-image="/images/forall/countries/Netherlands.png">Нидерланды</option>
+								<option value="Norway" data-image="/images/forall/countries/Norway.png">Норвегия</option>
+								<option value="Poland" data-image="/images/forall/countries/Poland.png">Польша</option>
+								<option value="Portugal" data-image="/images/forall/countries/Portugal.png">Португалия</option>
+								<option value="Rumania" data-image="/images/forall/countries/Rumania.png">Румыния</option>
+								<option value="Serbia" data-image="/images/forall/countries/Serbia.png">Сербия</option>
+								<option value="Slovakia" data-image="/images/forall/countries/Slovakia.png">Словакия</option>
+								<option value="Slovenia" data-image="/images/forall/countries/Slovenia.png">Словения</option>
+								<option value="Spain" data-image="/images/forall/countries/Spain.png">Испания</option>
+								<option value="Sweden" data-image="/images/forall/countries/Sweden.png">Швеция</option>
+								<option value="Switzerland" data-image="/images/forall/countries/Switzerland.png">Швейцария</option>
+								<option value="Ukraine" data-image="/images/forall/countries/Ukraine.png">Украина</option>
+							</select>
+						</div>
+						<div class="radio-select">
+							<input type="radio" name="excursion-type" value="group" checked="true"/>
+							<label>Групповая</label>
+							<input type="radio" name="excursion-type" value="individual"/>
+							<label>Индивидуальная</label>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-xs-6">
+								<p class="text-center">Дата приезда</p>
+								<input type="text" class="date" value="10-12-2017"/>
+								<div class="people-count">
+									<span>Взрослые </span><span class="gray">от 12 лет</span>
+									<div class="count-select">
+										<input type="radio" name="adult-count" id="adult-1" checked="true"/>
+										<label for="adult-1">1</label>
+										<input type="radio" name="adult-count" id="adult-2" checked="true"/>
+										<label for="adult-2">2</label>
+										<input type="radio" name="adult-count" id="adult-3" checked="true"/>
+										<label for="adult-3">3</label>
+										<input type="radio" name="adult-count" id="adult-4" checked="true"/>
+										<label for="adult-4">4</label>
+										<input type="radio" name="adult-count" id="adult-5" checked="true"/>
+										<label for="adult-5">5</label>
+										<input type="radio" name="adult-count" id="adult-6" checked="true"/>
+										<label for="adult-6">6</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<p class="text-center">Дата отъезда</p>
+								<input type="text" class="date" value="10-12-2017"/>
+								<div class="people-count">
+									<span>Дети </span><span class="gray">до 12 лет</span>
+									<div class="count-select">
+										<input type="radio" name="child-count" id="child-0" checked="true"/>
+										<label for="child-0">0</label>
+										<input type="radio" name="child-count" id="child-1" checked="true"/>
+										<label for="child-1">1</label>
+										<input type="radio" name="child-count" id="child-2" checked="true"/>
+										<label for="child-2">2</label>
+										<input type="radio" name="child-count" id="child-3" checked="true"/>
+										<label for="child-3">3</label>
+										<input type="radio" name="child-count" id="child-4" checked="true"/>
+										<label for="child-4">4</label>
+										<input type="radio" name="child-count" id="child-5" checked="true"/>
+										<label for="child-5">5</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 buttons">
+						<a href="#" class="button gray">Каталог экскурсий</a>
+						<a href="#" class="button gray">Выгодные пакетные предложения</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 checkbox-input">
+						<input type="checkbox" name="transfer" id="input-transfer"/>
+						<label for="input-transfer">Нужен трансфер аэропорт/отель</label>
+					</div>
+					<div class="col-md-4">
+						<input type="text" name="group-count" id="input-group-count"/>
+						<div class="checkbox-input">
+							<input type="checkbox" name="group" id="input-group"/>
+							<label for="input-group">Группа / количество человек</label>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<button class="button primary">Подобрать экскурсии</button>
+					</div>
+
+				</div>
+
+				<div class="excursion-form-type">
+					<div>
+						<div class="radio-input type-excursion-packages">
+							<input type="radio" name="excursion-type" id="input-excursion-packages"/>
+							<label for="input-excursion-packages">Пакеты экскурсий</label>
+						</div>
+					</div>
+					<div>
+						<div class="radio-input type-city">
+							<input type="radio" name="excursion-type" id="input-city"/>
+							<label for="input-city">По городу</label>
+						</div>
+					</div>
+					<div>
+						<div class="radio-input type-many-days">
+							<input type="radio" name="excursion-type" id="input-many-days"/>
+							<label for="input-many-days">Многодневная</label>
+						</div>
+					</div>
+					<div>
+						<div class="radio-input type-gastronomic">
+							<input type="radio" name="excursion-type" id="input-gastronomic"/>
+							<label for="input-gastronomic">Гастрономическая</label>
+						</div>
+					</div>
+					<div>
+						<div class="radio-input type-river">
+							<input type="radio" name="excursion-type" id="input-river"/>
+							<label for="input-river">Речная</label>
+						</div>
+					</div>
+					<div>
+						<div class="radio-input type-visiting">
+							<input type="radio" name="excursion-type" id="input-visiting"/>
+							<label for="input-visiting">Выездная</label>
+						</div>
+					</div>
+					<div>
+						<div class="radio-input type-on-foot">
+							<input type="radio" name="excursion-type" id="input-on-foot"/>
+							<label for="input-on-foot">Пешая</label>
+						</div>
+					</div>
+					<div>
+						<div class="radio-input type-evening">
+							<input type="radio" name="excursion-type" id="input-evening"/>
+							<label for="input-evening">Вечерняя</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="block tight">
+			<div class="h3">РЕЗУЛЬТАТ ПОДБОРА ПО ВАШЕМУ ЗАПРОСУ:</div>
+			<div class="date-choose">
+				<div>
+					<time datetime="2017-12-01">Сегодня<span>01.12.17</span></time>
+					<time datetime="2017-12-01">Четверг<span>02.12.17</span></time>
+					<time datetime="2017-12-01">Пятница<span>03.12.17</span></time>
+					<time datetime="2017-12-01">Суббота<span>04.12.17</span></time>
+					<time datetime="2017-12-01">Воскресенье<span>05.12.17</span></time>
+					<time datetime="2017-12-01" class="active">Понедельник<span>06.12.17</span></time>
+					<time datetime="2017-12-01">Вторник<span>07.12.17</span></time>
+					<time datetime="2017-12-01">Среда<span>08.12.17</span></time>
+					<time datetime="2017-12-01">Четверг<span>09.12.17</span></time>
+					<time datetime="2017-12-01">Пятница<span>10.12.17</span></time>
+					<time datetime="2017-12-01">Суббота<span>11.12.17</span></time>
+					<time datetime="2017-12-01">Воскресенье<span>12.12.17</span></time>
+					<time datetime="2017-12-01">Понедельник<span>13.12.17</span></time>
+					<time datetime="2017-12-01">Вторник<span>14.12.17</span></time>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container-fluid excursions">
+				<div class="row">
+					<div class="col-lg-4 col-sm-6">
+						<div class="price">20€</div>
+						<img src="/images/index/prague-s.png" alt=""/>
+						<div class="info">
+							<h4>Тур по Праге</h4>
+							<p>Обзорная экскурсия по Праге</p>
+							<div class="subinfo">
+								<div>
+									
+									<div class="week">
+									Дни проведения<br/>
+										<span>Пн</span>
+										<em>Вт</em>
+										<span>Ср</span>
+										<span>Чт</span>
+										<span>Пт</span>
+										<span>Сб</span>
+										<span>Вс</span>
+									</div>
+
+								</div>
+								<div>
+									Рейтинг: <div class="rating r4"><a href="#">8 отзывов</a></div>
+								</div>
+							</div>
+							<div class="timeinfo">
+								Продолжительность: 4 часа<br/>
+								Начало: 11:00
+							</div>
+							<div class="type group">Групповая</div>
+							<div class="buttons">
+								<a href="#" class="button buy primary">Купить</a>
+								<a href="#" class="button white more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="price">20€</div>
+						<img src="/images/index/prague-s.png" alt=""/>
+						<div class="info">
+							<h4>Тур по Праге</h4>
+							<p>Обзорная экскурсия по Праге</p>
+							<div class="subinfo">
+								<div>
+									
+									<div class="week">
+									Дни проведения<br/>
+										<span>Пн</span>
+										<em>Вт</em>
+										<span>Ср</span>
+										<span>Чт</span>
+										<span>Пт</span>
+										<span>Сб</span>
+										<span>Вс</span>
+									</div>
+
+								</div>
+								<div>
+									Рейтинг: <div class="rating r4"><a href="#">8 отзывов</a></div>
+								</div>
+							</div>
+							<div class="timeinfo">
+								Продолжительность: 4 часа<br/>
+								Начало: 11:00
+							</div>
+							<div class="type group">Групповая</div>
+							<div class="buttons">
+								<a href="#" class="button buy primary">Купить</a>
+								<a href="#" class="button white more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="price">20€</div>
+						<img src="/images/index/prague-s.png" alt=""/>
+						<div class="info">
+							<h4>Тур по Праге</h4>
+							<p>Обзорная экскурсия по Праге</p>
+							<div class="subinfo">
+								<div>
+									
+									<div class="week">
+									Дни проведения<br/>
+										<span>Пн</span>
+										<em>Вт</em>
+										<span>Ср</span>
+										<span>Чт</span>
+										<span>Пт</span>
+										<span>Сб</span>
+										<span>Вс</span>
+									</div>
+
+								</div>
+								<div>
+									Рейтинг: <div class="rating r4"><a href="#">8 отзывов</a></div>
+								</div>
+							</div>
+							<div class="timeinfo">
+								Продолжительность: 4 часа<br/>
+								Начало: 11:00
+							</div>
+							<div class="type group">Групповая</div>
+							<div class="buttons">
+								<a href="#" class="button buy primary">Купить</a>
+								<a href="#" class="button white more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="price">20€</div>
+						<img src="/images/index/prague-s.png" alt=""/>
+						<div class="info">
+							<h4>Тур по Праге</h4>
+							<p>Обзорная экскурсия по Праге</p>
+							<div class="subinfo">
+								<div>
+									
+									<div class="week">
+									Дни проведения<br/>
+										<span>Пн</span>
+										<em>Вт</em>
+										<span>Ср</span>
+										<span>Чт</span>
+										<span>Пт</span>
+										<span>Сб</span>
+										<span>Вс</span>
+									</div>
+
+								</div>
+								<div>
+									Рейтинг: <div class="rating r4"><a href="#">8 отзывов</a></div>
+								</div>
+							</div>
+							<div class="timeinfo">
+								Продолжительность: 4 часа<br/>
+								Начало: 11:00
+							</div>
+							<div class="type group">Групповая</div>
+							<div class="buttons">
+								<a href="#" class="button buy primary">Купить</a>
+								<a href="#" class="button white more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="price">20€</div>
+						<img src="/images/index/prague-s.png" alt=""/>
+						<div class="info">
+							<h4>Тур по Праге</h4>
+							<p>Обзорная экскурсия по Праге</p>
+							<div class="subinfo">
+								<div>
+									
+									<div class="week">
+									Дни проведения<br/>
+										<span>Пн</span>
+										<em>Вт</em>
+										<span>Ср</span>
+										<span>Чт</span>
+										<span>Пт</span>
+										<span>Сб</span>
+										<span>Вс</span>
+									</div>
+
+								</div>
+								<div>
+									Рейтинг: <div class="rating r4"><a href="#">8 отзывов</a></div>
+								</div>
+							</div>
+							<div class="timeinfo">
+								Продолжительность: 4 часа<br/>
+								Начало: 11:00
+							</div>
+							<div class="type group">Групповая</div>
+							<div class="buttons">
+								<a href="#" class="button buy primary">Купить</a>
+								<a href="#" class="button white more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="price">20€</div>
+						<img src="/images/index/prague-s.png" alt=""/>
+						<div class="info">
+							<h4>Тур по Праге</h4>
+							<p>Обзорная экскурсия по Праге</p>
+							<div class="subinfo">
+								<div>
+									
+									<div class="week">
+									Дни проведения<br/>
+										<span>Пн</span>
+										<em>Вт</em>
+										<span>Ср</span>
+										<span>Чт</span>
+										<span>Пт</span>
+										<span>Сб</span>
+										<span>Вс</span>
+									</div>
+
+								</div>
+								<div>
+									Рейтинг: <div class="rating r4"><a href="#">8 отзывов</a></div>
+								</div>
+							</div>
+							<div class="timeinfo">
+								Продолжительность: 4 часа<br/>
+								Начало: 11:00
+							</div>
+							<div class="type group">Групповая</div>
+							<div class="buttons">
+								<a href="#" class="button buy primary">Купить</a>
+								<a href="#" class="button white more">Подробнее</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="block nav">
+			<div>
+				<form class="search-form">
+					<input type="text" value="Поиск"/>
+				</form>
+				<nav>
+					<a href="#">Экскурсии по Чехии</a>
+					<a href="#">Экскурсии по Праге</a>
+					<a href="#">Экскурсии по Европе</a>
+					<a href="#">Пакеты экскурсий</a>
+					<a href="#">Трансфер</a>
+					<a href="#">Проживание</a>
+					<a href="#">Инфоцентр</a>
+				</nav>
+			</div>
+		</div>
+		<div class="block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="contacts col-lg-4">
+						<span class="phone">+ (420) 775 621 122, <br/>+ (420) 775 094 014</span>
+						<span class="mail">info@eurocomp.com</span>
+					</div>
+					<div class="social col-lg-4">
+						<p>Мы в соцсетях:</p>
+						<a href="#" class="fb"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="in"></a>
+						<a href="#" class="vk"></a>
+						<a href="#" class="ok"></a>
+						<a href="#" class="youtube"></a>
+						<a href="#" class="insta"></a>
+					</div>
+					<div class="col-lg-4">
+						<div class="basket">
+							<span>15</span>
+							<p>На сумму: 156.123,00 $</p>
+							<a href="#" class="button primary">Корзина</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="copyright">©  2017 Loremipsum.com</div>
+	</footer>
+	<div class="mob mob-nav-container">
+		<div class="mob-nav">
+			<nav>
+				<ul>
+					<li><a href="#">Экскурсии по Чехии</a></li>
+					<li><a href="#">Экскурсии по Праге</a></li>
+					<li><a href="#">Экскурсии по Европе</a></li>
+					<li><a href="#">Пакеты экскурсий</a></li>
+					<li><a href="#">Трансфер</a></li>
+					<li><a href="#">Проживание</a></li>
+					<li><a href="#">Инфоцентр</a></li>
+				</ul>
+			</nav>
+			<div class="nav-switch"></div>
+		</div>
+	</div>
+	<div class="mob mob-basket-container">
+		<div class="mob-basket">
+			В корзине<br/>
+			<span class="orange">12</span> экскурсий<br/>
+			На сумму<br/>
+			<span class="orange">155. 236, 00 €</span>
+			<div class="br"></div>
+			<a href="#" class="button primary">Оформинть заказ</a>
+			<div class="basket-switch"></div>
+		</div>
+	</div>
+  </body>
+</html>

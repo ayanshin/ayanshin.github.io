@@ -1,5 +1,6 @@
 ﻿$(function(){
 	
+	
 	var $form = $(".excursion-form"),
 		$select = $(".country-select"),
 		$fakeSelect = $(".country-select-span"),
@@ -7,6 +8,11 @@
 		$selectInfo = $(".countries"),
 		$slider = $(".slider"),
 		$window = $(window);
+		
+	$window.on("resize",function(){
+			$("#body").css("padding-top",$("header").height());
+	});
+	$window.trigger("resize");
 
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
