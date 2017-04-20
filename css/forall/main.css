@@ -46,9 +46,9 @@ button,input,textarea{
 }
 .block.gradient{
 	background: #fff;
-	background: -moz-radial-gradient(center, ellipse cover,  #fff 0%, #e6e8ea 100%);
-	background: -webkit-radial-gradient(center, ellipse cover,  #fff 0%,#e6e8ea 100%);
-	background: radial-gradient(ellipse at center,  #fff 0%,#e6e8ea 100%);
+	background: -moz-linear-gradient(top,  #fff 0%, #e6e8ea 100%);
+	background: -webkit-linear-gradient(top,  #fff 0%,#e6e8ea 100%);
+	background: linear-gradient(to bottom,  #fff 0%,#e6e8ea 100%);
 }
 
 .bold{font-weight:700;}
@@ -386,18 +386,24 @@ header .search-form input,.login-form input{
 	margin-top:.37em;
 	margin-bottom:.16em;
 }
-.excursion-form input[type="text"]{
+.excursion-form input[type="text"],.book-form input[type="text"]{
 	border:solid 1px #999;
 	background:#fff;
 	border-radius:10px;
 	padding:.278em .833em;
 	outline:0;
 }
-.excursion-form input.date{
+.excursion-form input.date,.book-form input.date{
 	background:#fff url(/images/forall/calendar.png) no-repeat 93% 50%;
 	padding:.278em .833em;
 	width:100%;
 	margin-bottom:.778em;
+}
+
+.centered{
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .slider{
@@ -513,10 +519,11 @@ header .search-form input,.login-form input{
 .count-select label{
 	display:inline-block;
 	color:#000;
-	line-height:1.389em;
+	line-height:1.389em !important;
 	width:1.389em;
 	text-align:center;
 	border-radius:.7em;
+	cursor:pointer;
 }
 .count-select input{
 	position:absolute;

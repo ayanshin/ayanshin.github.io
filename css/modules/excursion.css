@@ -4,6 +4,10 @@
 .big{
 	font-size:24px;
 }
+.bbig{
+	font-size:30px;
+
+}
 
 .excursion-header{
 	position:relative;
@@ -187,4 +191,45 @@
 	background:#cbebff;
 	border-color:#cbebff;
 	color:#517992;
+}
+
+.book-form{
+	background: #fff;
+	background: -moz-linear-gradient(top,  #fff 0%, #e6e8ea 100%);
+	background: -webkit-linear-gradient(top,  #fff 0%,#e6e8ea 100%);
+	background: linear-gradient(to bottom,  #fff 0%,#e6e8ea 100%);
+	border-radius:10px;
+	padding:40px;
+	font-size:18px;
+}
+.book-form label{
+	font-weight:400;
+}
+.book-form label,.book-form .button{
+	line-height:36px;
+}
+
+.book-form input[type="text"]{
+	width:100%;
+	margin-bottom:15px;
+}
+
+.people-count {
+	padding:11px;
+}
+
+.button.plus:before,.button.plus:after{
+	content:'';
+	position:relative;
+	top:13px;
+	display:block;
+	width:25px;
+	border-top:solid 1px #999;
+}
+.button.plus:after{
+	border:none;
+	border-left:solid 1px #999;
+	height:25px;
+	top:0;
+	left:13px;
 }
