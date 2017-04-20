@@ -1,0 +1,190 @@
+﻿.block{
+	font-size:18px;
+}
+.big{
+	font-size:24px;
+}
+
+.excursion-header{
+	position:relative;
+	min-height:170px;
+	color:#fff;
+}
+.excursion-header img{
+	width:100%;
+}
+.excursion-header>div{
+	position:absolute;
+	right:0;
+	bottom:0;
+	left:0;
+	text-align:center;
+	padding-top:50px;
+	padding-bottom:50px;
+	background:-moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+	background:-webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,.5) 100%);
+	background:linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,.5) 100%);
+}
+.excursion-header h1,.excursion-header .h1{
+	color:inherit;
+	font-size:48px;
+	margin:0;
+}
+.excursion-header p{
+	font-size:30px;
+	margin:10px 0;
+}
+
+*[class*="icon-"]:before{
+	content:'';
+	display:block;
+	float:left;
+	width:45px;
+	height:45px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	margin-right:20px;
+}
+.icon-clock:before{background-image:url(/images/excursion/clock.png);}
+.icon-bus:before{background-image:url(/images/excursion/bus.png);}
+.icon-on-foot:before{background-image:url(/images/excursion/on-foot.png);}
+.icon-group:before{background-image:url(/images/excursion/group.png);}
+.icon-point:before{background-image:url(/images/excursion/point.png);}
+.icon-guarantee:before{background-image:url(/images/excursion/guarantee.png);}
+.icon-support:before{background-image:url(/images/excursion/support.png);}
+
+.icon-big:before{
+	height:65px;
+	width:65px;
+}
+.excursion-options{
+	text-align:right;
+	margin-bottom:20px;
+}
+.excursion-options>div{
+	display:inline-block;
+	text-align:center;
+	margin:0 20px;
+}
+.excursion-options *[class*="icon-"]:before{
+	float:none;
+	margin:0 auto;
+}
+
+.row p{
+	overflow:hidden;
+}
+
+.llblue{
+	color:#637f90;
+}
+
+.excursion-inclusive{
+	text-align:center;
+	font-size:16px;
+	margin-bottom:10px;
+}
+.excursion-inclusive>div{
+	display:inline-block;
+	margin:10px 2px;
+	max-width:100px;
+	vertical-align:top;
+}
+.excursion-inclusive>div:before{
+	content:'';
+	display:block;
+	height:40px;
+	min-width:50px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+
+.guide:before{background-image:url(/images/excursion/options/guide.png);}
+.bus:before{background-image:url(/images/excursion/options/bus.png);}
+.boat:before{background-image:url(/images/excursion/options/boat.png);}
+.perfomance:before{background-image:url(/images/excursion/options/perfomance.png);}
+.dinner:before{background-image:url(/images/excursion/options/dinner.png);}
+.tickets:before{background-image:url(/images/excursion/options/tickets.png);}
+.transfer:before{background-image:url(/images/excursion/options/transfer.png);}
+.breakfest:before{background-image:url(/images/excursion/options/breakfest.png);}
+.earphones:before{background-image:url(/images/excursion/options/earphones.png);}
+.support:before{background-image:url(/images/excursion/options/support.png);}
+.hotel:before{background-image:url(/images/excursion/options/hotel.png);}
+.castle:before{background-image:url(/images/excursion/options/castle.png);}
+
+.guide.active:before{background-image:url(/images/excursion/options/guide-hover.png);}
+.bus.active:before{background-image:url(/images/excursion/options/bus-hover.png);}
+.boat.active:before{background-image:url(/images/excursion/options/boat-hover.png);}
+.perfomance.active:before{background-image:url(/images/excursion/options/perfomance-hover.png);}
+.dinner.active:before{background-image:url(/images/excursion/options/dinner-hover.png);}
+.tickets.active:before{background-image:url(/images/excursion/options/tickets-hover.png);}
+.transfer.active:before{background-image:url(/images/excursion/options/transfer-hover.png);}
+.breakfest.active:before{background-image:url(/images/excursion/options/breakfest-hover.png);}
+.earphones.active:before{background-image:url(/images/excursion/options/earphones-hover.png);}
+.support.active:before{background-image:url(/images/excursion/options/support-hover.png);}
+.hotel.active:before{background-image:url(/images/excursion/options/hotel-hover.png);}
+.castle.active:before{background-image:url(/images/excursion/options/castle-hover.png);}
+
+.pricing{
+	font-size:24px;
+	color:#002d49;
+	text-align:center;
+	padding-bottom:20px;
+}
+.pricing span{
+	font-size:32px;
+	font-weight:700;
+}
+.pricing .button{
+	min-width:360px;
+	line-height:40px;
+}
+
+.tabs{
+	border:none !important;
+	padding:0;
+	background:transparent;
+}
+.tabs .ui-tabs-nav{
+	border:none !important;
+	padding:0;
+	background:transparent;
+	display:table;
+	border-collapse:separate;
+    border-spacing:3px 0;
+	margin-left:-6px;
+	margin-right:-6px;
+}
+
+.tabs .ui-tabs-panel{
+	background:#fff;
+}
+.tabs .ui-tabs-nav li{
+	display:table-cell;
+	width:800px;
+	float:none;
+	margin:0;
+}
+.tabs .ui-tabs-nav li.ui-tabs-active{
+	padding-bottom:0;
+	margin-bottom:0;
+	border-right:solid 3px transparent;
+	color:#002d49;
+	background:#fff;
+	border-color:#fff;
+}
+.tabs .ui-tabs-nav li a{
+	display:block;
+	color:inherit;
+	float:none !important;
+	text-align:center;
+	outline:0;
+	font-size:24px;
+	font-weight:700;
+}
+
+.ui-tab.ui-state-default{
+	background:#cbebff;
+	border-color:#cbebff;
+	color:#517992;
+}

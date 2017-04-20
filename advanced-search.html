@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/forall/slick-theme.css">
     <link rel="stylesheet" href="/css/forall/jquery-ui.theme.css">
     <link rel="stylesheet" href="/css/forall/main.css">
-    <link rel="stylesheet" href="/css/advanced-search/style.css">
+    <link rel="stylesheet" href="/css/modules/advanced-search.css">
     <script src="/js/modules/jquery.js"></script>
     <script src="/js/modules/slick.js"></script>
     <script src="/js/modules/mfp.js"></script>
@@ -84,11 +84,14 @@
 				</div>
 			</nav>
 		</header>
-		<div class="block gradient">
+		<div class="block gradient tight">
 			<div class="excursion-form advanced fluid-container">
+				<div class="breadcrumbs">
+					<a href="/">Главная</a> > Расширенный поиск
+				</div>
 				<h2>Расширенный ПОИСК ЭКСКУРСИИ</h2>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="countries"></div>
 						<div class="text-center country-container">
 							<div class="country-select-span">Выбор страны</div>
@@ -141,8 +144,12 @@
 							<input type="radio" name="excursion-type" value="individual"/>
 							<label>Индивидуальная</label>
 						</div>
+						<div class="checkbox-input">
+							<input type="checkbox" name="transfer" id="input-transfer"/>
+							<label for="input-transfer">Нужен трансфер аэропорт/отель</label>
+						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="row">
 							<div class="col-xs-6">
 								<p class="text-center">Дата приезда</p>
@@ -187,28 +194,24 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 buttons">
-						<a href="#" class="button gray">Каталог экскурсий</a>
-						<a href="#" class="button gray">Выгодные пакетные предложения</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 checkbox-input">
-						<input type="checkbox" name="transfer" id="input-transfer"/>
-						<label for="input-transfer">Нужен трансфер аэропорт/отель</label>
-					</div>
-					<div class="col-md-4">
-						<input type="text" name="group-count" id="input-group-count"/>
-						<div class="checkbox-input">
-							<input type="checkbox" name="group" id="input-group"/>
-							<label for="input-group">Группа / количество человек</label>
+						<div class="row">
+							<div class="col-xs-9">
+							
+							<div class="checkbox-input">
+								<input type="checkbox" name="group" id="input-group"/>
+								<label for="input-group">Группа / количество человек</label>
+							</div>
+							</div>
+							<div class="col-xs-3">
+								<input type="text" name="group-count" id="input-group-count"/>							
+							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-4 col-md-4 buttons">
+						<a href="#" class="button gray">Каталог экскурсий</a>
+						<a href="#" class="button gray">Пакетные предложения</a>
 						<button class="button primary">Подобрать экскурсии</button>
 					</div>
-
 				</div>
 
 				<div class="excursion-form-type">
@@ -285,7 +288,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="block">
+		<div class="block tight">
 			<div class="container-fluid excursions">
 				<div class="row">
 					<div class="col-lg-4 col-sm-6">

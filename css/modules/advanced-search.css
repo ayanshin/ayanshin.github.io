@@ -1,0 +1,93 @@
+﻿.excursion-form .buttons .button{
+	margin-bottom:46px
+}
+
+.excursion-form-type{
+	text-align:center;
+	font-size:16px;
+	color:#7f7f7f;
+	overflow:hidden;
+}
+.excursion-form-type>div{
+	display:inline-block;
+	margin:0 1%;
+	margin-bottom:20px;
+}
+.excursion-form-type .radio-input{
+	text-align:center;
+}
+.excursion-form-type .radio-input label:before{
+	content:'';
+	display:block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.excursion-form-type .radio-input label:after{
+	display:block;
+	margin:0 auto;
+}
+
+.excursion-form-type .radio-input input:checked+label{
+	color:#ff6225;
+}
+
+.excursion-form .countries{
+	margin-top:17px;
+}
+
+.excursion-form-type .radio-input.type-on-foot label:before{background-image:url(/images/forall/excursion-types/steps.png);}
+.excursion-form-type .radio-input.type-city label:before{background-image:url(/images/forall/excursion-types/castle.png);}
+.excursion-form-type .radio-input.type-many-days label:before{background-image:url(/images/forall/excursion-types/calendar.png);}
+.excursion-form-type .radio-input.type-gastronomic label:before{background-image:url(/images/forall/excursion-types/food.png);}
+.excursion-form-type .radio-input.type-river label:before{background-image:url(/images/forall/excursion-types/boat.png);}
+.excursion-form-type .radio-input.type-visiting label:before{background-image:url(/images/forall/excursion-types/bus.png);}
+.excursion-form-type .radio-input.type-evening label:before{background-image:url(/images/forall/excursion-types/moon.png);}
+.excursion-form-type .radio-input.type-excursion-packages label:before{background-image:url(/images/forall/excursion-types/shopping.png);}
+
+.excursion-form-type .radio-input.type-on-foot input:checked+label:before{background-image:url(/images/forall/excursion-types/steps-hover.png);}
+.excursion-form-type .radio-input.type-city input:checked+label:before{background-image:url(/images/forall/excursion-types/castle-hover.png);}
+.excursion-form-type .radio-input.type-many-days input:checked+label:before{background-image:url(/images/forall/excursion-types/calendar-hover.png);}
+.excursion-form-type .radio-input.type-gastronomic input:checked+label:before{background-image:url(/images/forall/excursion-types/food-hover.png);}
+.excursion-form-type .radio-input.type-river input:checked+label:before{background-image:url(/images/forall/excursion-types/boat-hover.png);}
+.excursion-form-type .radio-input.type-visiting input:checked+label:before{background-image:url(/images/forall/excursion-types/bus-hover.png);}
+.excursion-form-type .radio-input.type-evening input:checked+label:before{background-image:url(/images/forall/excursion-types/moon-hover.png);}
+.excursion-form-type .radio-input.type-excursion-packages input:checked+label:before{background-image:url(/images/forall/excursion-types/shopping-hover.png);}
+
+
+.people-count{
+	min-height:73px;
+}
+
+@media (max-width: 1160px) {
+	.excursion-form{
+		font-size:16px;
+	}
+	.count-select{
+		word-spacing:-7px;
+	}	
+	.checkbox-input label:before, .radio-input label:after{
+		margin-right:8px;
+	}
+}
+@media (min-width: 992px){
+	.excursion-form .col-md-4:nth-child(2){
+		width:40%;
+	}
+	.excursion-form .col-md-4:nth-child(3){
+		width:26.66666667%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.col-sm-4.buttons{
+		clear:both;
+		float:none;
+		margin:auto;
+		padding:20px 0;
+	}
+	.excursion-form .buttons .button{
+		margin-bottom:15px;
+	}
+}

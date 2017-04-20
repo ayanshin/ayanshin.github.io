@@ -26,9 +26,16 @@ button,input,textarea{
 .block{
 	overflow:hidden;
 }
+.block.vpadding{
+	padding-top:25px;
+	padding-bottom:25px;
+}
 
 .block.tight>*{
 	max-width:1120px
+}
+.block.average>*{
+	max-width:1364px
 }
 .block.bpadding{
 	padding-bottom:20px;
@@ -44,8 +51,10 @@ button,input,textarea{
 	background: radial-gradient(ellipse at center,  #fff 0%,#e6e8ea 100%);
 }
 
+.bold{font-weight:700;}
 .gray{color:#323232;}
 .orange{color:#ff5400;}
+.blue{color:#009dff;}
 .italic{
 	font-style:italic;
 }
@@ -384,7 +393,7 @@ header .search-form input,.login-form input{
 	padding:.278em .833em;
 	outline:0;
 }
-.excursion-form .date{
+.excursion-form input.date{
 	background:#fff url(/images/forall/calendar.png) no-repeat 93% 50%;
 	padding:.278em .833em;
 	width:100%;
@@ -439,6 +448,7 @@ header .search-form input,.login-form input{
 	background:-webkit-linear-gradient(top,  #f5f6f6 0%,#e8eaeb 100%);
 	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);	
 }
+
 .radio-select input{
 	position:absolute;
 	opacity:0;
@@ -763,6 +773,7 @@ footer .basket{
 }
 
 .breadcrumbs{
+	font-size:14px;
 	margin:10px 0;
 	font-style:italic;
 }
@@ -901,11 +912,12 @@ footer .basket{
 
 .excursions .subinfo>div:first-child{width:65%;float:left;}
 .excursions .subinfo>div:last-child{width:33%;float:right;}
-.excursions .week{
+.week{
 	white-space:nowrap;
 	word-spacing:-2px;
+	text-align:center;
 }
-.excursions .week span,.excursions .week em{
+.week span,.week em{
 	display:inline-block;
 	color:#96a1a9;
 	border:solid 1px;
@@ -920,7 +932,7 @@ footer .basket{
 	margin-top:-4px;
 	margin-bottom:0;
 }
-.excursions .week span{
+.week span{
 	border-color:#fff;
 	background:#fff;
 	color:#172a3b;
@@ -932,7 +944,7 @@ footer .basket{
 	line-height:1.2em;
 	background:url(/images/index/excursions-clock-s.png) no-repeat 0 50%;
 }
-.excursions .rating{
+.rating{
 	display:inline-block;
 	position:relative;
 	padding-top:16px;
@@ -940,7 +952,7 @@ footer .basket{
 	width:92px;
 	margin-bottom:3px;
 }
-.excursions .rating:before,.excursions .rating:after{
+.rating:before,.rating:after{
 	content:'';
 	position:absolute;
 	display:block;
@@ -951,12 +963,12 @@ footer .basket{
 	opacity:.5;
 	background:url(/images/index/excursions-star.png) repeat-x 0 0;
 }
-.excursions .rating:after{opacity:1;}
-.excursions .rating.r1:after{width:19px;}
-.excursions .rating.r2:after{width:38px;}
-.excursions .rating.r3:after{width:57px;}
-.excursions .rating.r4:after{width:76px;}
-.excursions .rating.r5:after{width:92px;}
+.rating:after{opacity:1;}
+.rating.r1:after{width:19px;}
+.rating.r2:after{width:38px;}
+.rating.r3:after{width:57px;}
+.rating.r4:after{width:76px;}
+.rating.r5:after{width:92px;}
 
 .excursions .type{
 	padding-left:40px;
@@ -1034,8 +1046,7 @@ footer .basket{
 }
 
 #input-group-count{
-	float:right;
-	width:100px;
+	width:100%;
 }
 
 /* Excursion packages */
@@ -1047,64 +1058,12 @@ footer .basket{
 /* On foot */
 /* Evening */
 
-.excursion-form .buttons .button{
-	margin-bottom:47px
-}
-
-.excursion-form-type{
-	display:table;
-	width:100%;
-	font-size:16px;
-	color:#7f7f7f;
-	margin-bottom:20px;
-}
-.excursion-form-type>div{
-	display:table-cell;
-	width:5%;
-}
-.excursion-form-type .radio-input label:before{
-	content:'';
-	display:block;
-	width:50px;
-	height:50px;
-	margin:0 auto;
-	background-repeat:no-repeat;
-	background-position:0 0;
-}
-.excursion-form-type .radio-input label:after{
-	display:block;
-	margin:0 auto;
-}
-
-.excursion-form-type .radio-input input:checked+label{
-	color:#ff6225;
-}
-
-.excursion-form-type .radio-input.type-on-foot label:before{background-image:url(/images/forall/excursion-types/steps.png);}
-.excursion-form-type .radio-input.type-city label:before{background-image:url(/images/forall/excursion-types/castle.png);}
-.excursion-form-type .radio-input.type-many-days label:before{background-image:url(/images/forall/excursion-types/calendar.png);}
-.excursion-form-type .radio-input.type-gastronomic label:before{background-image:url(/images/forall/excursion-types/food.png);}
-.excursion-form-type .radio-input.type-river label:before{background-image:url(/images/forall/excursion-types/boat.png);}
-.excursion-form-type .radio-input.type-visiting label:before{background-image:url(/images/forall/excursion-types/bus.png);}
-.excursion-form-type .radio-input.type-evening label:before{background-image:url(/images/forall/excursion-types/moon.png);}
-.excursion-form-type .radio-input.type-excursion-packages label:before{background-image:url(/images/forall/excursion-types/shopping.png);}
-
-.excursion-form-type .radio-input.type-on-foot input:checked+label:before{background-image:url(/images/forall/excursion-types/steps-hover.png);}
-.excursion-form-type .radio-input.type-city input:checked+label:before{background-image:url(/images/forall/excursion-types/castle-hover.png);}
-.excursion-form-type .radio-input.type-many-days input:checked+label:before{background-image:url(/images/forall/excursion-types/calendar-hover.png);}
-.excursion-form-type .radio-input.type-gastronomic input:checked+label:before{background-image:url(/images/forall/excursion-types/food-hover.png);}
-.excursion-form-type .radio-input.type-river input:checked+label:before{background-image:url(/images/forall/excursion-types/boat-hover.png);}
-.excursion-form-type .radio-input.type-visiting input:checked+label:before{background-image:url(/images/forall/excursion-types/bus-hover.png);}
-.excursion-form-type .radio-input.type-evening input:checked+label:before{background-image:url(/images/forall/excursion-types/moon-hover.png);}
-.excursion-form-type .radio-input.type-excursion-packages input:checked+label:before{background-image:url(/images/forall/excursion-types/shopping-hover.png);}
-
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.mob{
 		display:none;
 	}
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	#logo {
 	  margin-left:auto;
 	  margin-right:auto;

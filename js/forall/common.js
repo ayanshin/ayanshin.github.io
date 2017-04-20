@@ -10,9 +10,13 @@
 		$window = $(window);
 		
 	$window.on("resize",function(){
+		setTimeout(function(){
 			$("#body").css("padding-top",$("header").height());
+		}, 100);
 	});
 	$window.trigger("resize");
+	
+	$(".tabs").tabs();
 
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
