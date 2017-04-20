@@ -8,6 +8,16 @@
 	background: -webkit-radial-gradient(center, ellipse cover,  #fff 0%,#e6e8ea 100%);
 	background: radial-gradient(ellipse at center,  #fff 0%,#e6e8ea 100%);
 }
+@media (max-width: 1300px) {
+	.excursion-form{
+		padding:0 1.389em;
+		width:22em;
+	}
+	.people-count{
+		padding-right:0;
+		padding-left:0;
+	}
+}
 @media (max-width: 767px) {
 	.excursion-form{
 		width:100%;

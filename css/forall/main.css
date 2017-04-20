@@ -1292,19 +1292,13 @@ footer .basket{
 	}
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1270px) {
 	.search-form{
 		display:none;
 	}
 	.navbar-nav>li>a{
 		padding-left:5px;
 		padding-right:5px;
-	}
-}
-@media (max-width: 1300px) {
-	.excursion-form{
-		padding:0 1.389em;
-		width:22em;
 	}
 	.people-count{
 		padding-right:0;
