@@ -22,6 +22,9 @@ button,input,textarea{
 }
 .block>*{max-width:1560px;padding:0 30px;margin-right:auto;margin-left:auto;}
 
+@media (min-width: 1280px) {
+	.block>*{padding:0 60px;}
+}
 
 .block{
 	overflow:hidden;
@@ -450,9 +453,9 @@ header .search-form input,.login-form input{
 	color:#999;
 	background:#d8dada;
 	/*box-shadow:none;*/
-	background:-moz-linear-gradient(top,  #f5f6f6 0%, #e8eaeb 100%);
-	background:-webkit-linear-gradient(top,  #f5f6f6 0%,#e8eaeb 100%);
-	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);	
+	background:-moz-linear-gradient(top,  #eef0f0 0%, #d5d7da 100%);
+	background:-webkit-linear-gradient(top,  #eef0f0 0%,#d5d7da 100%);
+	background:linear-gradient(to bottom,  #eef0f0 0%,#d5d7da 100%);	
 }
 
 .radio-select input{
@@ -467,8 +470,8 @@ header .search-form input,.login-form input{
 }
 .radio-select input:checked+label{
 	color:#323232;
-	background:#d8dada;
-	box-shadow:inset 5px 5px 10px 0 #b6b7b9;
+	background:#9bd0f1;
+	box-shadow:inset 5px 5px 10px 0 rgba(0,0,0,.3);
 }
 .excursion-form .button:not(.primary){
 	color:#393939;
@@ -689,6 +692,9 @@ footer .basket{
 	border:none;
 	outline:0 !important;
 }
+.button.padding{
+	padding:0 40px;
+}
 .button:hover,.button:focus{
 	text-decoration:none;
 	box-shadow:0 0 6px rgba(0,0,0,.4);
@@ -707,9 +713,9 @@ footer .basket{
 .button.gray{
 	background:#d8dada;
 	/*box-shadow:none;*/
-	background:-moz-linear-gradient(top,  #f5f6f6 0%, #e8eaeb 100%);
-	background:-webkit-linear-gradient(top,  #f5f6f6 0%,#e8eaeb 100%);
-	background:linear-gradient(to bottom,  #f5f6f6 0%,#e8eaeb 100%);		
+	background:-moz-linear-gradient(top,  #eef0f0 0%, #d5d7da 100%);
+	background:-webkit-linear-gradient(top,  #eef0f0 0%,#d5d7da 100%);
+	background:linear-gradient(to bottom,  #eef0f0 0%,#d5d7da 100%);
 }
 .button.blue{
 	background: #48b5fa;
@@ -861,8 +867,8 @@ footer .basket{
 	right:30px;
 	left:30px;
 	height: 40px; 
-	background:url(/images/index/excursions-arrow.png) no-repeat 0 0;
-	background-size:100%;
+	background: url(data:image/svg+xml;base64,77u/PHN2ZyBoZWlnaHQ9IjUwIiB3aWR0aD0iNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+ICA8cG9seWdvbiBwb2ludHM9IjAsMCAyNSw1MCA1MCwwIiBzdHlsZT0iZmlsbDojMDAyZDQ5IiAvPjwvc3ZnPg==) no-repeat 0 0;
+	background-size:100% 100%;
 }
 .excursions img{
 	border-radius:10px;
@@ -1056,14 +1062,54 @@ footer .basket{
 	width:100%;
 }
 
-/* Excursion packages */
-/* Pedestrian */
-/* Many days */
-/* Gastronomic */
-/* River */
-/* Visiting */
-/* On foot */
-/* Evening */
+img.mfp-img{
+	padding:0;
+	border-radius:10px;
+}
+.mfp-figure figure:before{
+	content:'';
+	display:block;
+	padding-top:40px;
+}
+.mfp-figure figure:after{
+	content:'';
+	display:block;
+	padding-bottom:40px;
+}
+.mfp-image-holder .mfp-close{
+	left:auto;
+	right:-31px;
+	top:9px;
+	width:60px;
+	height:60px;
+	line-height:60px;
+	font-size:50px;
+	color:#39aef7;
+	border:solid 2px;
+	border-radius:30px;
+	text-align:center;
+	padding:0;
+	background:#fff;
+	opacity:1;
+	cursor:pointer;
+}
+.mfp-image-holder .mfp-close:hover{
+	color:#ff4800;
+	box-shadow:0 0 15px -10px #000;
+}
+
+.payments{
+	position:relative;
+}
+
+.payments:after{
+	content:'';
+	display:block;
+	width:115px;
+	height:34px;
+	background:url(/images/forall/basket-payments.png) no-repeat 0 0;
+	margin:10px auto 30px;
+}
 
 @media (min-width: 992px) {
 	.mob{
@@ -1258,7 +1304,7 @@ footer .basket{
 	}
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1310px) {
 	.search-form{
 		display:none;
 	}
@@ -1269,6 +1315,11 @@ footer .basket{
 	.people-count{
 		padding-right:0;
 		padding-left:0;
+	}
+}
+@media (max-width: 1150px) {
+	.block.block-nav{
+		font-size:16px;
 	}
 }
 

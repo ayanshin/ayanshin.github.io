@@ -142,25 +142,25 @@
 				</p>
 			</div>
 		</div>
-		<div class="block vpadding average">
+		<div class="block vpadding tight">
 			<div class="fluid-container pricing">
 				<div class="row">
 					<div class="col-md-6">
 						<p>Стоимость  экскурсии офисе: <span class="blue">14 €</span></p>
-						<a href="#" class="button blue">Добавить в корзину </a>
+						<p><a href="#" class="button blue">Добавить в корзину </a></p>
 					</div>
 					<div class="col-md-6">
 						<p>При бронировании и оплате на сайте: <span class="orange">12 €</span></p>
-						<a href="#" class="button primary">Забронировать</a>
+						<p><a href="#" class="button primary">Забронировать</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="block vpadding lblue average">
+		<div class="block vpadding lblue average excursion-info">
 			<div>
 				<div class="tabs">
 				  <ul>
-					<li><a href="#tabs-1">Основная информация</a></li>
+					<li><a href="#tabs-1"><span class="hidden-xs">Основная информация</span><span class="visible-xs">Информация</span></a></li>
 					<li><a href="#tabs-2">Программа</a></li>
 					<li><a href="#tabs-3">Доп. информация</a></li>
 				  </ul>
@@ -172,6 +172,18 @@
 						историей некогда королевского города Вы можете познакомиться на обзорной авто- пешеходной экскурсии, посетив самые 
 						известные достопримечательности в сопровождении интересных рассказов профессионального экскурсовода. 
 					</p>
+					<div class="excursion-slider-container">
+						<div class="excursion-slider">
+							<a href="/images/excursion/s1.png"><img src="/images/excursion/s1.png" alt=""/></a>
+							<a href="/images/excursion/s2.png"><img src="/images/excursion/s2.png" alt=""/></a>
+							<a href="/images/excursion/s1.png"><img src="/images/excursion/s1.png" alt=""/></a>
+							<a href="/images/excursion/s2.png"><img src="/images/excursion/s2.png" alt=""/></a>
+							<a href="/images/excursion/s1.png"><img src="/images/excursion/s1.png" alt=""/></a>
+							<a href="/images/excursion/s2.png"><img src="/images/excursion/s2.png" alt=""/></a>
+							<a href="/images/excursion/s1.png"><img src="/images/excursion/s2.png" alt=""/></a>
+							<a href="/images/excursion/s2.png"><img src="/images/excursion/s2.png" alt=""/></a>
+						</div>
+					</div>
 				  </div>
 				  <div id="tabs-2">
 					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
@@ -183,7 +195,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="block vpadding average">
+		<div class="block vpadding tight">
 			<div class="fluid-container">
 				<div class="row">
 					<div class="col-md-6">
@@ -265,43 +277,110 @@
 						</div>
 						<div class="col-md-4">
 							<div class="row">
-								<div class="col-xs-12">
+								<div class="col-xs-9 col-md-12">
 								
 									<div class="checkbox-input">
 										<input type="checkbox" name="group" id="input-group"/>
 										<label for="input-group">Группа / количество человек</label>
 									</div>
 								</div>
-								<div class="col-xs-6 centered">
+								<div class="col-xs-3 col-md-6">
 									<input type="text" name="group-count" id="input-group-count"/>							
 								</div>
 							</div>
 						</div>
 						<div class="col-md-8">
-							<p>Укажите данные покупателя:</p>
+							<label>Укажите данные покупателя:</label>
 							<div class="row">
-								<div class="col-xs-1"><label>Имя:</label></div>
-								<div class="col-xs-5"><input type="text"/></div>
-								<div class="col-xs-2"><label>Фамилия:</label></div>
+								<div class="col-xs-2"><label>Имя:</label></div>
+								<div class="col-xs-3"><input type="text"/></div>
+								<div class="col-xs-3"><label>Фамилия:</label></div>
 								<div class="col-xs-4"><input type="text"/></div>
-								<div class="col-xs-5"><label>Ваша электронная почта:</label></div>
-								<div class="col-xs-7"><input type="text"/></div>
-								<div class="col-xs-5"><label>Телефон для связи:</label></div>
-								<div class="col-xs-7"><input type="text"/></div>
+								<div class="col-xs-6"><label><span class="hidden-xs">Ваша электронная почта:</span><span class="visible-xs">Email:</span></label></div>
+								<div class="col-xs-6"><input type="text"/></div>
+								<div class="col-xs-6"><label><span class="hidden-xs">Телефон для связи:</span><span class="visible-xs">Телефон:</span></label></div>
+								<div class="col-xs-6"><input type="text"/></div>
 							</div>
 						</div>
-						<div class="col-md-8">
-							<p>Укажите данные туристов:</p>
-							<div class="row">
-								<div class="col-xs-1"><label>Имя:</label></div>
-								<div class="col-xs-4"><input type="text"/></div>
-								<div class="col-xs-2"><label>Фамилия:</label></div>
-								<div class="col-xs-4"><input type="text"/></div>
-								<div class="col-xs-!"><button class="button gradient plus"></button></div>
+						<div class="col-md-4">
+							<div class="checkbox-input">
+								<input type="checkbox" name="coupon" id="input-coupon"/>
+								<label for="input-coupon">У меня есть промокод</label>
 							</div>
+							<div class="book-form-block row">
+								<div class="col-xs-5">Взрослые:<br/>Дети:</div>
+								<div class="col-xs-7">2х12=24 euro<br/>2х10=20 euro</div>
+								<div class="col-xs-6 big">Итого:</div>
+								<div class="col-xs-6 bbig orange bold">44 €</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<label>Укажите данные туристов:</label>
+						</div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-xs-2"><label>Имя:</label></div>
+								<div class="col-xs-3"><input type="text"/></div>
+								<div class="col-xs-3"><label>Фамилия:</label></div>
+								<div class="col-xs-3"><input type="text"/></div>
+								<div class="col-xs-1"><button class="button gray plus"></button></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<button class="button primary show">Забронировать</button>
+						</div>
+						<div class="col-md-7 small payments">
+						Вы будете перенаправлены на безопасную страницу оплаты заказа
+						где вы сможете выбрать удобные для Вас способы оплаты услуги.
 						</div>
 					</div>
 				</form>
+			</div>
+		</div>
+		<div class="block llblue tight vpadding hidden-xs">
+			<div>
+				<div class="h1">Отзывы</div>
+				<div class="comments-container">
+					<div class="comments">
+						<div class="comment">
+							<div class="comment-image"></div>
+							<div class="comment-body">
+								<div class="comment-body-name blue">Александр</div>
+								<div class="comment-body-date">12.12.2016</div>
+								<div class="rating r4"></div>
+								<div class="comment-body-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+									ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+									ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+									reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+									occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+									laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+								</div>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-image"><img src="/images/excursion/s1.png" alt=""/></div>
+							<div class="comment-body">
+								<div class="comment-body-name">Александр</div>
+								<div class="comment-body-date">12.12.2016</div>
+								<div class="rating.r4"></div>
+								<div class="comment-body-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+									ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+									ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+									reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+									occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+									laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="text-center">
+					<a href="#" class="button blue padding big">Оставить отзыв</a>
+				</p>
 			</div>
 		</div>
 	</div>

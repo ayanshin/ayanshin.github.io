@@ -89,19 +89,6 @@
 	margin-bottom:10px;
 	width:100%;
 }
-
-.payments{
-	position:relative;
-}
-
-.payments:after{
-	content:'';
-	display:block;
-	width:115px;
-	height:34px;
-	background:url(/images/basket/basket-payments.png) no-repeat 0 0;
-	margin:10px auto 30px;
-}
 .basket-form .small{
 	font-size:14px;
 }
@@ -166,12 +153,12 @@
 		margin:auto;
 		margin-right:15px;
 	}
+	.basket-form label{
+		margin-right:-25px;
+	}
 	.payments:before{
 		float:right;
 		margin-left:20px;
-	}
-	.basket-form label{
-		margin-right:-25px;
 	}
 	.payments{
 		padding-right:150px;

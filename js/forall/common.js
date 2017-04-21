@@ -17,6 +17,26 @@
 	$window.trigger("resize");
 	
 	$(".tabs").tabs();
+	
+	$.extend(true, $.magnificPopup.defaults, {
+		tClose: 'Закрыть (Esc)',
+		tLoading: 'Загрузка...',
+		gallery: {
+			tPrev: 'Назад (Клавиша влево)',
+			tNext: 'Вперед (Клавиша вправо)',
+			tCounter: '%curr% из %total%'
+		},
+		image: {
+			tError: 'Не удалось загрузить <a href="%url%">изображение</a>.'
+		},
+		ajax: {
+			tError: 'Не удалось загрузить <a href="%url%">содержимое</a>.'
+		},
+		closeMarkup: '<div title="%title%" class="mfp-close">&times;</div>',
+		mainClass: 'mfp-fade',
+		removalDelay: 300,
+		fixedContentPos: false
+	});
 
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
@@ -72,6 +92,47 @@
 			}
 		]
 	});
+	
+
+	
+	$(".excursion-slider").slick({
+		infinite:true,
+		slidesToScroll:4,
+		slidesToShow: 4,
+		prevArrow:"<button class='slick-prev'/>",
+		nextArrow:"<button class='slick-next'/>",
+		responsive: [
+			{
+				breakpoint: 1280,
+				settings: {slidesToShow: 4,slidesToScroll:4}
+			},
+			{
+				breakpoint: 1024,
+				settings: {slidesToShow: 3,slidesToScroll:3}
+			},
+			{
+				breakpoint: 768,
+				settings: {slidesToShow: 2,slidesToScroll:2}
+			}
+		]
+	});
+	
+	$(".excursion-slider").magnificPopup({
+		delegate:".slick-slide:not(.slick-cloned)",
+		type:"image",
+		gallery:{
+			enabled:true
+		}
+	});
+	
+	$(".comments").slick({
+		//infinite:true,
+		slidesToScroll:1,
+		slidesToShow: 1,
+		prevArrow:"<button class='slick-prev'/>",
+		nextArrow:"<button class='slick-next'/>",
+	});
+
 	
 	$slider.slick({
 		infinite:true,
