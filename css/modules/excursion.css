@@ -135,6 +135,9 @@
 	text-align:center;
 	padding-bottom:20px;
 }
+.pricing p{
+	margin:0 -10px;
+}
 .pricing span{
 	font-size:32px;
 	font-weight:700;
@@ -229,7 +232,7 @@
 	height:36px;
 	border-radius:10px;
 	position:absolute;
-	right:0;
+	right:15px;
 }
 
 .book-form-block{
@@ -423,5 +426,11 @@
 	}
 	.tabs .ui-tabs-nav li a {
 		font-size:18px;
+	}
+	
+}
+@media (max-width: 500px) {
+	.excursion-header>div{
+		padding-bottom:20px
 	}
 }
