@@ -12,6 +12,7 @@
 	$window.on("resize",function(){
 		setTimeout(function(){
 			$("#body").css("padding-top",$("header").height());
+			$(".active+.description").calcPosition();
 		}, 100);
 	});
 	$window.trigger("resize");
@@ -227,8 +228,46 @@
 		$(this).prev("input").click();
 	});
 	
-	$(".excursions .col-lg-4").on("click",".more",function(){
-		$(this).parents(".col-lg-4").toggleClass("active");
+	$(".excursion-card").on("click",".more",function(){
+		var $card = $(this).parents(".excursion-card").first(),
+			$activeCards = $(".excursion-card.active"),
+			$row = $(this).parents(".row"),
+			$desc = $card.nextAll(".description").first(),
+			show = !$card.hasClass("active");
+		$activeCards.each(function(){
+			var $active = $(this);
+			$active.find(".switchable").slideDown();
+			$active.next().slideUp(function(){
+				$active.removeClass("active");
+			});
+		});
+		if(show){
+			$desc.calcPosition();
+			$card.addClass("active");
+			$card.find(".switchable").slideUp();
+			$desc.hide().slideDown();
+		}
 		return false;
 	});
 });
+
+$.fn.calcPosition=function(){
+	if($(this).length){
+		var $desc = $(this),
+			$card = $desc.prev(),
+			$row = $desc.parents(".row").first();
+		$desc.attr("style","");
+		var offsetLeft = $row.offset().left-$card.offset().left-parseInt($row.css("margin-left"),0),
+			offsetRight = $row.width()+$row.offset().left+parseInt($row.css("margin-right"),0)-$card.offset().left-$card.width();
+		if(parseInt(offsetLeft)==0){
+			$desc.css("border-top-left-radius",0);
+		}
+		if(parseInt(offsetRight)==0){
+			$desc.css("border-top-right-radius",0);
+		}
+		$desc.css({
+			"margin-left":offsetLeft,
+			width:$row.width()+parseInt($row.css("margin-right"),0)+parseInt($row.css("margin-left"),0)
+		});
+	}
+};
