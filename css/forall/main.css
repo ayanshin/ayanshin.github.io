@@ -47,27 +47,28 @@ button,input,textarea{
 	background:#dcdcdc;
 	color:inherit;
 }
+.block.lgray{
+	background:#ebebeb;
+}
 .block.gradient{
 	background: #fff;
 	background: -moz-linear-gradient(top,  #fff 0%, #e6e8ea 100%);
 	background: -webkit-linear-gradient(top,  #fff 0%,#e6e8ea 100%);
 	background: linear-gradient(to bottom,  #fff 0%,#e6e8ea 100%);
 }
+.lblue{	background:#8cd3ff;}
+.llblue{background:#bde6ff;}
 
 .bold{font-weight:700;}
 .gray{color:#323232;}
 .orange{color:#ff5400;}
 .blue{color:#009dff;}
-.italic{
-	font-style:italic;
-}
+.italic{font-style:italic;}
+.roboto{font-family:'roboto',Verdana;}
+.big{font-size:24px;}
+.bbig{font-size:30px;}
+.inline-block{display:inline-block;}
 
-.inline-block{
-	display:inline-block
-}
-
-.lblue{	background:#8cd3ff;}
-.llblue{background:#bde6ff;}
 
 .search-form input,.login-form input{
 	color:#fff;
@@ -93,10 +94,10 @@ i[class*='icon-']{
 i.icon-login{background-image:url(/images/forall/login.png);}
 i.icon-pass{background-image:url(/images/forall/key.png);}
 
-.search-form button,.login-form button{
+.search-form .button,.login-form .button{
 	border-radius:10px;
 	border:none;
-	padding:3px 20px;
+	padding:3px 10px;
 }
 
 header{
@@ -116,11 +117,7 @@ header a{color:#fff;}
 header .container-fluid{
 	overflow:hidden;
 }
-header .info{text-align:center;}
-header {
-	white-space:nowrap;
-}
-header .info>div{display:inline-block;text-align:left;}
+header .info{text-align:center;white-space:nowrap;}
 header nav{
 	background: #43b4fb;
 	background: -moz-linear-gradient(top,  #43b4fb 0%, #33a4ec 100%);
@@ -146,31 +143,39 @@ header .nav{
 	display:inline-block;
 	float:none;
 }
-header .contacts{
-	padding-top:14px;
+.header-address{
+	padding-top:10px;
+	font-size:16px;
+	text-align:center;
+}
+header .contacts .mail{
+	clear:left
+}
+.contacts{
 	margin-left:-6px;
 	padding-left:6px;
 	overflow:hidden;
+	text-align:left;
 }
-header .contacts span{
+.contacts span{
 	display:inline-block;
 	font-size:14px;
 	color:#bde6ff;
 	float:left;
 }
-header .contacts-icon{
+.contacts-icon{
 	margin-top:6px;
 }
-header .contacts-icon.mail{
-	margin-top:12px
+.contacts-icon.mail{
+	margin-top:8px
 }
-header .contacts .phone{
+.contacts .phone{
 	line-height:18px;
 	margin:6px 10px 0 0;
 }
 
 header .basket{
-	margin-top:11px;
+	margin-top:5px;
 	text-align:center;
 	background-position:50% 5px;
 }
@@ -180,7 +185,7 @@ header .basket span{
 }
 header .basket p{
 	padding:40px 0 0;
-	margin-bottom:5px;
+	margin-bottom:0;
 }
 header .basket .button{
 	margin:0;
@@ -188,7 +193,8 @@ header .basket .button{
 
 header .search-form, .login-form{
 	font-size:12px;
-	padding-bottom:6px;
+	padding-top:8px;
+	white-space:nowrap;
 }
 header .search-form input,.login-form input{
 	border-width:1px;
@@ -197,20 +203,17 @@ header .search-form input,.login-form input{
 	padding-top:2px;
 	padding-bottom:2px;
 	text-align:left;
+	width:70%;
 }
 
 .login-form{
-	margin-top:25px;
-	text-align:center;
+	margin-top:3px;
 	font-style:italic;
 }
-.col-md-5 .login-form{
-	margin-left:-15px;
-}
-.login-form i{margin-right:5px;}
-.login-form input+i{margin-left:5%;}
-.login-form input{margin-bottom:14px;width:100px;}
-.login-form button{margin-right:10px;}
+/* .login-form i{margin-right:5px;} */
+/* .login-form input+i{margin-left:5%;} */
+/* .login-form input{margin-bottom:14px;width:100px;} */
+.login-form .button{margin-right:10px;}
 
 .navbar-nav>li>a:hover,.navbar-nav>li>a:focus{
 	color:#126295;
@@ -236,7 +239,7 @@ header .search-form input,.login-form input{
 .contacts span{
 	display:block;
 	/* padding-left:40px; */
-	line-height:48px;
+	line-height:38px;
 	background-position:0 50%;
 	background-repeat:no-repeat;
 }
@@ -267,7 +270,7 @@ header .search-form input,.login-form input{
 	display:block;
 	height:67px;
 	width:326px;
-	margin:14px 0 23px 0;
+	margin:7px 0 15px;
 	float:left;
 	background:url(/images/forall/logo.png) no-repeat 0 0;
 }
@@ -1309,16 +1312,26 @@ img.mfp-img{
 	footer .contacts{
 		overflow:hidden;
 		padding-left:50px;
+		text-align:center;
 	}
 	footer .contacts span{
 		display:inline-block;
-		font-size:14px;
+		font-size:18px;
 		color:#bde6ff;
 		float:left;
+		line-height:24px;
+		float:none
+	}
+	footer .contacts-icon{
+		transform:scale(1.5);
+		margin-right:20px
 	}
 	footer .contacts .phone{
 		line-height:18px;
 		margin:6px 10px 0 0;
+	}
+	footer .contacts .mail{
+		line-height:47px;
 	}
 	footer .col-lg-4:last-child{
 		display:none;
@@ -1333,9 +1346,6 @@ img.mfp-img{
 }
 
 @media (max-width: 1310px) {
-	.search-form{
-		display:none;
-	}
 	.navbar-nav>li>a{
 		padding-left:5px;
 		padding-right:5px;

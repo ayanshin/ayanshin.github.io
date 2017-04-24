@@ -30,6 +30,7 @@
 }
 .ui-widget.ui-widget-content {
 	border: 1px solid #e6e8ea;
+	z-index:200 !important;
 }
 .ui-widget-content {
 	border: 1px solid #999999;

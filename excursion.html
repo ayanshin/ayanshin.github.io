@@ -26,7 +26,7 @@
 		<header>
 			<div class="block block-info">
 				<div>
-					<a href="#" id="logo"></a>
+					<a href="/" id="logo"></a>
 					<div class="basket">
 						<span>15</span>
 						<p>На сумму: 156.123,00 $</p>
@@ -34,26 +34,48 @@
 					</div>
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-7 info">
+							<!-- <div class="col-lg-5 header-address"> -->
+								<!-- Офис - Praha 1, Nové MěstoPraha1, Panská 6<br/> -->
+								<!-- Информационный туристический центр<br/> -->
+								<!-- Tourist Information Centre -->
+							<!-- </div> -->
+							<div class="col-sm-1"></div>
+							<div class="col-sm-6 info">
 								<div>
 									<div class="contacts">
-										<span class="phone">+ (420) 775 621 122<br/>+ (420) 775 094 014</span>
-										<span class="mail">info@eurocomp.com</span>
+										<span class="phone">
+											<a class="contacts-icon mobile" href="tel:420775621122"></a>
+											<a class="contacts-icon whatsapp" href="whatsapp://tel:420775621122"></a>
+											<a class="contacts-icon viber" href="viber://tel:420775621122"></a>
+											
+											+ (420) 775 621 122<br/>
+											+ (420) 775 094 014</span>
+										<span class="mail">
+											<a class="contacts-icon mail" href="mailto:info@eurocomp.com"></a>
+											info@eurocomp.com
+										</span>
 									</div>
-									<form class="search-form">
-										<input type="text" value="Поиск"/>
-										<button class="button blue">Найти</button>
-									</form>
+
 								</div>
 							</div>
-							<div class="col-md-5">
-								<form class="login-form">
-									<i class="icon-login"></i><input type="text" class="login" value="Логин"/>
-									<i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/>
-									<button class="button blue">Вход</button>
-									<a href="#">Регистрация</a>
+							<div class="col-sm-4">
+								<form class="search-form">
+									<input type="text" value="Поиск"/>
+									<button class="button blue">Найти</button>
 								</form>
+								<div class="login-form">
+									<a href="#" class="button blue">Вход</a>
+									<a href="#">Регистрация</a>
+								</div>
+
+								<!-- <form class="login-form"> -->
+									<!-- <i class="icon-login"></i><input type="text" class="login" value="Логин"/> -->
+									<!-- <i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/> -->
+									<!-- <a href="#" class="button blue">Вход</a> -->
+									<!-- <a href="#">Регистрация</a> -->
+								<!-- </form> -->
 							</div>
+							<div class="col-sm-1"></div>
 						</div>
 					</div>
 					<div class="mob nav-switch"></div>
@@ -64,11 +86,11 @@
 				<div class="container-fluid">
 					<ul class="nav navbar-nav">
 						<!--li class="active"><a href="#">Ссылка</a></li-->
-						<li><a href="#">Экскурсии по Чехии</a></li>
-						<li><a href="#">Экскурсии по Праге</a></li>
-						<li><a href="#">Экскурсии по Европе</a></li>
-						<li><a href="#">Пакеты экскурсий</a></li>
-						<li><a href="#">Трансфер</a></li>
+						<li><a href="/excursion.html">Экскурсии по Чехии</a></li>
+						<li><a href="/catalog.html">Экскурсии по Праге</a></li>
+						<li><a href="/advanced-search.html">Экскурсии по Европе</a></li>
+						<li><a href="/basket.html">Пакеты экскурсий</a></li>
+						<li><a href="/pay.html">Трансфер</a></li>
 						<li><a href="#">Проживание</a></li>
 						<li><a href="#">Инфоцентр</a></li>
 					</ul>
@@ -404,9 +426,21 @@
 		<div class="block">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="contacts col-lg-4">
-						<span class="phone">+ (420) 775 621 122, <br/>+ (420) 775 094 014</span>
-						<span class="mail">info@eurocomp.com</span>
+					<div class="col-lg-4">
+						<div class="contacts">
+							<span class="phone">
+								<a class="contacts-icon mobile" href="tel:420775621122"></a>
+								<a class="contacts-icon whatsapp" href="whatsapp://tel:420775621122"></a>
+								<a class="contacts-icon viber" href="viber://tel:420775621122"></a>
+								
+								+ (420) 775 621 122<br/>
+								+ (420) 775 094 014</span>
+							<br/><br/>
+							<span class="mail">
+								<a class="contacts-icon mail" href="mailto:info@eurocomp.com"></a>
+								info@eurocomp.com
+							</span>
+						</div>
 					</div>
 					<div class="social col-lg-4">
 						<p>Мы в соцсетях:</p>

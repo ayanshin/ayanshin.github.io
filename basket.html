@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/forall/slick-theme.css">
     <link rel="stylesheet" href="/css/forall/jquery-ui.theme.css">
     <link rel="stylesheet" href="/css/forall/main.css">
-    <link rel="stylesheet" href="/css/basket/style.css">
+    <link rel="stylesheet" href="/css/modules/basket.css">
     <script src="/js/modules/jquery.js"></script>
     <script src="/js/modules/slick.js"></script>
     <script src="/js/modules/mfp.js"></script>
@@ -26,7 +26,7 @@
 		<header>
 			<div class="block block-info">
 				<div>
-					<a href="#" id="logo"></a>
+					<a href="/" id="logo"></a>
 					<div class="basket">
 						<span>15</span>
 						<p>На сумму: 156.123,00 $</p>
@@ -34,7 +34,13 @@
 					</div>
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-7 info">
+							<!-- <div class="col-lg-5 header-address"> -->
+								<!-- Офис - Praha 1, Nové MěstoPraha1, Panská 6<br/> -->
+								<!-- Информационный туристический центр<br/> -->
+								<!-- Tourist Information Centre -->
+							<!-- </div> -->
+							<div class="col-sm-1"></div>
+							<div class="col-sm-6 info">
 								<div>
 									<div class="contacts">
 										<span class="phone">
@@ -49,20 +55,27 @@
 											info@eurocomp.com
 										</span>
 									</div>
-									<form class="search-form">
-										<input type="text" value="Поиск"/>
-										<button class="button blue">Найти</button>
-									</form>
+
 								</div>
 							</div>
-							<div class="col-md-5">
-								<form class="login-form">
-									<i class="icon-login"></i><input type="text" class="login" value="Логин"/>
-									<i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/>
-									<button class="button blue">Вход</button>
-									<a href="#">Регистрация</a>
+							<div class="col-sm-4">
+								<form class="search-form">
+									<input type="text" value="Поиск"/>
+									<button class="button blue">Найти</button>
 								</form>
+								<div class="login-form">
+									<a href="#" class="button blue">Вход</a>
+									<a href="#">Регистрация</a>
+								</div>
+
+								<!-- <form class="login-form"> -->
+									<!-- <i class="icon-login"></i><input type="text" class="login" value="Логин"/> -->
+									<!-- <i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/> -->
+									<!-- <a href="#" class="button blue">Вход</a> -->
+									<!-- <a href="#">Регистрация</a> -->
+								<!-- </form> -->
 							</div>
+							<div class="col-sm-1"></div>
 						</div>
 					</div>
 					<div class="mob nav-switch"></div>
@@ -73,102 +86,16 @@
 				<div class="container-fluid">
 					<ul class="nav navbar-nav">
 						<!--li class="active"><a href="#">Ссылка</a></li-->
-						<li><a href="#">Экскурсии по Чехии</a></li>
-						<li><a href="#">Экскурсии по Праге</a></li>
-						<li><a href="#">Экскурсии по Европе</a></li>
-						<li><a href="#">Пакеты экскурсий</a></li>
-						<li><a href="#">Трансфер</a></li>
+						<li><a href="/excursion.html">Экскурсии по Чехии</a></li>
+						<li><a href="/catalog.html">Экскурсии по Праге</a></li>
+						<li><a href="/advanced-search.html">Экскурсии по Европе</a></li>
+						<li><a href="/basket.html">Пакеты экскурсий</a></li>
+						<li><a href="/pay.html">Трансфер</a></li>
 						<li><a href="#">Проживание</a></li>
 						<li><a href="#">Инфоцентр</a></li>
 					</ul>
 				</div>
 			</nav>
-			<div class="excursion-form-header block">
-				<form>
-					<div class="date-start">
-						<p>Дата от</p>
-						<input type="text" class="date" value="10-12-2017"/>
-					</div>
-					<div class="date-end">
-						<p>Дата до</p>
-						<input type="text" class="date" value="10-12-2017"/>
-					</div>
-					<div class="count-adult">
-						<p class="text-center">Взрослые</p>
-						<input type="text" name="adult-count" value="1"/>
-					</div>
-					<div class="count-child">
-						<p class="text-center">Дети</p>
-						<input type="text" name="child-count" value="1"/>
-					</div>
-					<div class="delimiter"></div>
-					<div class="text-center country-container">
-						<div class="countries">
-						</div>
-						<div class="country-select-span">Выбор страны</div>
-						<select name="country" class="country-select" multiple="multiple">
-							<option value="Albania" data-image="/images/forall/countries/Albania.png">Албания</option>
-							<option value="Great Britain" data-image="/images/forall/countries/Great Britain.png">Англия</option>
-							<option value="Andorra" data-image="/images/forall/countries/Andorra.png">Андорра</option>
-							<option value="Austria" data-image="/images/forall/countries/Austria.png">Австрия</option>
-							<option value="Belarus" data-image="/images/forall/countries/Belarus.png">Белоруссия</option>
-							<option value="Belgium" data-image="/images/forall/countries/Belgium.png">Бельгия</option>
-							<option value="Bosnia and Herzegovina" data-image="/images/forall/countries/Bosnia-Herzegovina.png">Босния и Герцеговина</option>
-							<option value="Bulgaria" data-image="/images/forall/countries/Bulgaria.png">Болгария</option>
-							<option selected value="Czech Republic" data-image="/images/forall/countries/Czech Republic.png">Чехия</option>
-							<option value="Denmark" data-image="/images/forall/countries/Denmark.png">Дания</option>
-							<option value="Estonia" data-image="/images/forall/countries/Estonia.png">Эстония</option>
-							<option value="Finland" data-image="/images/forall/countries/Finland.png">Финляндия</option>
-							<option value="France" data-image="/images/forall/countries/France.png">Франция</option>
-							<option selected value="Germany" data-image="/images/forall/countries/Germany.png">Германия</option>
-							<option value="Greece" data-image="/images/forall/countries/Greece.png">Греция</option>
-							<option selected value="Hungary" data-image="/images/forall/countries/Hungary.png">Венгрия</option>
-							<option value="Iceland" data-image="/images/forall/countries/Iceland.png">Исландия</option>
-							<option value="Ireland" data-image="/images/forall/countries/Ireland.png">Ирландия</option>
-							<option value="Italy" data-image="/images/forall/countries/Italy.png">Италия</option>
-							<option value="Latvia" data-image="/images/forall/countries/Latvia.png">Латвия</option>
-							<option value="Liechtenstein" data-image="/images/forall/countries/Liechtenstein.png">Лихтенштейн</option>
-							<option value="Lithuania" data-image="/images/forall/countries/Lithuania.png">Литва</option>
-							<option value="Luxemburg" data-image="/images/forall/countries/Luxemburg.png">Люксембург</option>
-							<option value="Macedonia" data-image="/images/forall/countries/Macedonia.png">Македония</option>
-							<option value="Malta" data-image="/images/forall/countries/Malta.png">Мальта</option>
-							<option value="Moldavia" data-image="/images/forall/countries/Moldavia.png">Молдавия</option>
-							<option value="Monaco" data-image="/images/forall/countries/Monaco.png">Монако</option>
-							<option value="Montenegro" data-image="/images/forall/countries/Montenegro.png">Черногория</option>
-							<option value="Netherlands" data-image="/images/forall/countries/Netherlands.png">Нидерланды</option>
-							<option value="Norway" data-image="/images/forall/countries/Norway.png">Норвегия</option>
-							<option value="Poland" data-image="/images/forall/countries/Poland.png">Польша</option>
-							<option value="Portugal" data-image="/images/forall/countries/Portugal.png">Португалия</option>
-							<option value="Rumania" data-image="/images/forall/countries/Rumania.png">Румыния</option>
-							<option value="Serbia" data-image="/images/forall/countries/Serbia.png">Сербия</option>
-							<option value="Slovakia" data-image="/images/forall/countries/Slovakia.png">Словакия</option>
-							<option value="Slovenia" data-image="/images/forall/countries/Slovenia.png">Словения</option>
-							<option value="Spain" data-image="/images/forall/countries/Spain.png">Испания</option>
-							<option value="Sweden" data-image="/images/forall/countries/Sweden.png">Швеция</option>
-							<option value="Switzerland" data-image="/images/forall/countries/Switzerland.png">Швейцария</option>
-							<option value="Ukraine" data-image="/images/forall/countries/Ukraine.png">Украина</option>
-						</select>
-					</div>
-					<div class="delimiter"></div>
-					<div class="radio-select">
-						<input type="radio" name="excursion-type" value="group" checked="true"/>
-						<label>Групповая</label>
-					</div>
-					<div class="radio-select">
-						<input type="radio" name="excursion-type" value="individual"/>
-						<label>Индивидуальная</label>
-					</div>
-					<div class="delimiter"></div>
-					<div>
-						<button class="button primary">Распланировать</button>
-					</div>
-					<div class="basket">
-						<span>15</span>
-						<p>На сумму: 156.123,00 $</p>
-						<a href="#" class="button primary">Корзина</a>
-					</div>
-				</form>
-			</div>
 		</header>
 		<div class="block ">
 			<div class="fluid-container">
@@ -249,9 +176,9 @@
 		<div class="block tight gray">
 			<div class="container-fluid">
 				<h2 class="orange">Оформление заказа:</h2>
-				<form class="basket-form">
+				<form class="site-form">
 					<div class="row">
-						<div class="col-xs-4 col-md-3"><label><span class="hidden-xs">Ваша электронная почта*</span><span class="visible-xs">Email*</span></label></div>
+						<div class="col-xs-4 col-md-3"><label>Email*</label></div>
 						<div class="col-xs-8 col-md-3"><input type="text" placeholder="Ivanov@mail.com"/></div>
 						<div class="col-xs-4 col-md-3"><label><span class="hidden-xs">Телефон для связи*</span><span class="visible-xs">Телефон*</span></label></div>
 						<div class="col-xs-8 col-md-3"><input type="text"/></div>
@@ -318,9 +245,21 @@
 		<div class="block">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="contacts col-lg-4">
-						<span class="phone">+ (420) 775 621 122, <br/>+ (420) 775 094 014</span>
-						<span class="mail">info@eurocomp.com</span>
+					<div class="col-lg-4">
+						<div class="contacts">
+							<span class="phone">
+								<a class="contacts-icon mobile" href="tel:420775621122"></a>
+								<a class="contacts-icon whatsapp" href="whatsapp://tel:420775621122"></a>
+								<a class="contacts-icon viber" href="viber://tel:420775621122"></a>
+								
+								+ (420) 775 621 122<br/>
+								+ (420) 775 094 014</span>
+							<br/><br/>
+							<span class="mail">
+								<a class="contacts-icon mail" href="mailto:info@eurocomp.com"></a>
+								info@eurocomp.com
+							</span>
+						</div>
 					</div>
 					<div class="social col-lg-4">
 						<p>Мы в соцсетях:</p>
