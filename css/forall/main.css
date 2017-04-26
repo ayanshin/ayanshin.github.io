@@ -385,7 +385,7 @@ header .search-form input,.login-form input{
 
 .excursion-form{
 	overflow:hidden;
-	padding:0 2.8em;
+
 	font-size:18px;
 }
 .excursion-form h2,.excursion-form .h2{
@@ -1140,6 +1140,10 @@ img.mfp-img{
 	height:34px;
 	background:url(/images/forall/basket-payments.png) no-repeat 0 0;
 	margin:10px auto 30px;
+}
+
+#ui-datepicker-div{
+	z-index:200 !important;
 }
 
 @media (min-width: 992px) {
