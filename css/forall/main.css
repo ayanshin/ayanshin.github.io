@@ -454,11 +454,11 @@ header .search-form input,.login-form input{
 }
 .radio-select label,.excursion-form .button:not(.primary),.people-count{
 	color:#999;
-	background:#d8dada;
+	background:#e7e8e8;
 	/*box-shadow:none;*/
-	background:-moz-linear-gradient(top,  #eef0f0 0%, #d5d7da 100%);
-	background:-webkit-linear-gradient(top,  #eef0f0 0%,#d5d7da 100%);
-	background:linear-gradient(to bottom,  #eef0f0 0%,#d5d7da 100%);	
+	background:-moz-linear-gradient(top,  #e7e8e8 0%, #ced0d3 100%);
+	background:-webkit-linear-gradient(top,  #e7e8e8 0%,#ced0d3 100%);
+	background:linear-gradient(to bottom,  #e7e8e8 0%,#ced0d3 100%);	
 }
 
 .radio-select input{
@@ -488,10 +488,6 @@ header .search-form input,.login-form input{
 
 .excursion-form .button.primary{
 	box-shadow:0 0 10px rgba(0,0,0,.2);
-}
-
-.excursion-form .button.search{
-	margin-bottom:4px;
 }
 .excursion-form p{
 	margin-bottom:3px;
@@ -534,6 +530,7 @@ header .search-form input,.login-form input{
 .count-select input{
 	position:absolute;
 	opacity:0;
+	cursor:pointer;
 }
 .count-select input:checked+label{
 	background:#ff6225;
@@ -714,6 +711,7 @@ footer .basket{
 	background: linear-gradient(to bottom,  #ff733c 0%,#ff4800 100%);
 }
 .button.gray{
+	color:#333;
 	background:#d8dada;
 	/*box-shadow:none;*/
 	background:-moz-linear-gradient(top,  #eef0f0 0%, #d5d7da 100%);
@@ -950,6 +948,12 @@ footer .basket{
 	background:#fff;
 	color:#172a3b;
 }
+.week em{
+	background:#ff5400;
+	border-color:#ff5400;
+	color:#fff;
+	
+}
 
 .excursion-card .timeinfo,
 .description .timeinfo{
@@ -1029,6 +1033,12 @@ footer .basket{
 }
 .excursion-card.active+.description{
 	display:block;
+}
+
+.description .button{
+	line-height:29px;
+	padding:0 20px;
+	margin:0 30px;
 }
 
 

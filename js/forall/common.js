@@ -249,6 +249,24 @@
 		}
 		return false;
 	});
+	
+	if($(".button.plus").length){
+		var $plus = $(".button.plus"),
+			$row = $plus.parents(".row").first(),
+			$clone = $row.clone();
+		
+		$clone.find(".plus").addClass("minus");
+		
+		$plus.on("click",function(){
+			var $cloned = $clone.clone();
+			$cloned.on("click",".minus",function(){
+				$cloned.remove();
+				return false
+			});
+			$row.after($cloned);
+			return false
+		});
+	}
 });
 
 $.fn.calcPosition=function(){

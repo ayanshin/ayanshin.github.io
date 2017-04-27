@@ -2,6 +2,9 @@
 	font-size:18px;
 }
 
+.breadcrumbs{
+	margin:-1em 0 1em;
+}
 .excursion-header{
 	position:relative;
 	min-height:170px;
@@ -86,6 +89,9 @@
 	margin:10px 2px;
 	max-width:100px;
 	vertical-align:top;
+}
+.excursion-inclusive>div.active{
+	color:#ff6225;
 }
 .excursion-inclusive>div:before{
 	content:'';
@@ -203,7 +209,7 @@
 	font-weight:400;
 }
 .book-form label,.book-form .button{
-	line-height:36px;
+	line-height:43px;
 }
 .book-form input[type="text"]{
 	line-height:30px;
@@ -222,7 +228,8 @@
 }
 
 .button.plus{
-	height:36px;
+	height:43px;
+	width:43px;
 	border-radius:10px;
 	position:absolute;
 	right:15px;
@@ -239,6 +246,7 @@
 	content:'';
 	position:relative;
 	top:13px;
+	left:3px;
 	display:block;
 	width:25px;
 	border-top:solid 1px #999;
@@ -248,7 +256,10 @@
 	border-left:solid 1px #999;
 	height:25px;
 	top:0;
-	left:13px;
+	left:16px;
+}
+.button.minus:after{
+	opacity:0;
 }
 .tabs.ui-tabs .ui-tabs-panel{
 	padding:30px 60px;
