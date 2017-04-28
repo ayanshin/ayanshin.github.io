@@ -144,30 +144,19 @@ header .nav{
 	float:none;
 }
 .header-address{
-	padding-top:10px;
-	font-size:16px;
+	padding:3px 5px;
+	font-size:14px;
 	text-align:center;
+	line-height:18px;
+	white-space:nowrap;
 }
 header .contacts .mail{
 	clear:left
 }
-.contacts{
-	margin-left:-6px;
-	padding-left:6px;
-	overflow:hidden;
-	text-align:left;
-}
-.contacts span{
-	display:inline-block;
-	font-size:14px;
-	color:#bde6ff;
-	float:left;
-}
-.contacts-icon{
-	margin-top:6px;
-}
-.contacts-icon.mail{
-	margin-top:8px
+
+header .contacts-icon.mail{
+	vertical-align:middle;
+	margin-top:0;
 }
 .contacts .phone{
 	line-height:18px;
@@ -236,21 +225,16 @@ header .search-form input,.login-form input{
 	box-shadow: inset 1px 0 0 0 #5cc0ff, inset -1px 0 0 0 #269ae4, inset -2px 0 0 0 #5cc0ff;
 }
 
-.contacts span{
-	display:block;
-	/* padding-left:40px; */
-	line-height:38px;
-	background-position:0 50%;
-	background-repeat:no-repeat;
+header .contacts{
+	font-size:14px;
+	line-height:16px;
 }
 .contacts-icon{
-	display:block;
-	float:left;
+	display:inline-block;
 	width:24px;
 	height:24px;
 	background-repeat:no-repeat;
 	background-position:50% 50%;
-	margin-right:5px;
 	opacity:.8;
 }
 .contacts-icon:hover{
@@ -268,9 +252,9 @@ header .search-form input,.login-form input{
 
 #logo{
 	display:block;
-	height:67px;
-	width:326px;
-	margin:7px 0 15px;
+	height:73px;
+	width:229px;
+	margin:7px 0 7px;
 	float:left;
 	background:url(/images/forall/logo.png) no-repeat 0 0;
 }
@@ -612,14 +596,21 @@ footer .search-form input{
 }
 footer .contacts{
 	font-size:18px;
+	margin:20px 0;
 }
-
-footer .contacts{
-	margin:20px 0 0;
+footer .phone p{
+	display:inline-block;
+	font-size:16px;
+	line-height:20px;
+	vertical-align:middle;
+	margin-left:5px;
+}
+footer .mail .contacts-icon.mail{
+	vertical-align:middle;
 }
 
 footer .basket{
-	margin-top:30px;
+	margin-top:50px;
 }
 
 .copyright{
@@ -633,7 +624,7 @@ footer .basket{
 	text-align:center;
 	text-transform:uppercase;
 	font-size:18px;
-	margin:30px 0;
+	margin:50px 0;
 }
 .social a{
 	display:inline-block;

@@ -267,6 +267,24 @@
 			return false
 		});
 	}
+	
+	$(".checkbox-switchable").each(function(){
+		var $switchable = $(this),
+			$checkbox = $switchable.prev().find("input[type='checkbox']");
+		
+		if($checkbox.length){
+			if(!$checkbox.is(":checked")){
+				$switchable.hide();
+			}
+			$checkbox.on("click change",function(){
+				if($checkbox.is(":checked")){
+					$switchable.slideDown();
+				}else{
+					$switchable.slideUp();
+				}
+			});
+		}
+	});
 });
 
 $.fn.calcPosition=function(){

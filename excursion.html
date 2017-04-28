@@ -34,28 +34,26 @@
 					</div>
 					<div class="container-fluid">
 						<div class="row">
-							<!-- <div class="col-lg-5 header-address"> -->
-								<!-- Офис - Praha 1, Nové MěstoPraha1, Panská 6<br/> -->
-								<!-- Информационный туристический центр<br/> -->
-								<!-- Tourist Information Centre -->
-							<!-- </div> -->
-							<div class="col-sm-1"></div>
-							<div class="col-sm-6 info">
-								<div>
-									<div class="contacts">
-										<span class="phone">
-											<a class="contacts-icon mobile" href="tel:420775621122"></a>
-											<a class="contacts-icon whatsapp" href="whatsapp://tel:420775621122"></a>
-											<a class="contacts-icon viber" href="viber://tel:420775621122"></a>
-											
-											+ (420) 775 621 122<br/>
-											+ (420) 775 094 014</span>
-										<span class="mail">
-											<a class="contacts-icon mail" href="mailto:info@eurocomp.com"></a>
-											info@eurocomp.com
-										</span>
+							<div class="col-md-5 header-address">
+								Praha 1, Nové MěstoPraha1, Panská 6<br/>
+								Туристический инфоцентр<br/>
+								Tourist Information Centre
+								<br/>
+								<span class="mail">
+									<a class="contacts-icon mail" href="mailto:info@eurocomp.com"></a>
+									info@eurocomp.com
+								</span>
+							</div>
+							<div class="col-sm-3 info">
+								<div class="contacts text-center">
+									<div class="phone">
+										<a class="contacts-icon mobile" href="tel:420775621122"></a>
+										<a class="contacts-icon whatsapp" href="whatsapp://tel:420775621122"></a>
+										<a class="contacts-icon viber" href="viber://tel:420775621122"></a>
 									</div>
-
+									+ (420) 775 621 122<br/>
+									+ (420) 775 094 014<br/>
+									<a href="#">Обратный звонок</a>
 								</div>
 							</div>
 							<div class="col-sm-4">
@@ -67,15 +65,7 @@
 									<a href="#" class="button blue">Вход</a>
 									<a href="#">Регистрация</a>
 								</div>
-
-								<!-- <form class="login-form"> -->
-									<!-- <i class="icon-login"></i><input type="text" class="login" value="Логин"/> -->
-									<!-- <i class="icon-pass"></i><input type="text" class="pass" value="Пароль"/><br/> -->
-									<!-- <a href="#" class="button blue">Вход</a> -->
-									<!-- <a href="#">Регистрация</a> -->
-								<!-- </form> -->
 							</div>
-							<div class="col-sm-1"></div>
 						</div>
 					</div>
 					<div class="mob nav-switch"></div>
@@ -266,15 +256,15 @@
 										<div class="count-select">
 											<input type="radio" name="adult-count" id="adult-1" checked="true"/>
 											<label for="adult-1">1</label>
-											<input type="radio" name="adult-count" id="adult-2" checked="true"/>
+											<input type="radio" name="adult-count" id="adult-2"/>
 											<label for="adult-2">2</label>
-											<input type="radio" name="adult-count" id="adult-3" checked="true"/>
+											<input type="radio" name="adult-count" id="adult-3"/>
 											<label for="adult-3">3</label>
-											<input type="radio" name="adult-count" id="adult-4" checked="true"/>
+											<input type="radio" name="adult-count" id="adult-4"/>
 											<label for="adult-4">4</label>
-											<input type="radio" name="adult-count" id="adult-5" checked="true"/>
+											<input type="radio" name="adult-count" id="adult-5"/>
 											<label for="adult-5">5</label>
-											<input type="radio" name="adult-count" id="adult-6" checked="true"/>
+											<input type="radio" name="adult-count" id="adult-6"/>
 											<label for="adult-6">6</label>
 										</div>
 									</div>
@@ -285,15 +275,15 @@
 										<div class="count-select">
 											<input type="radio" name="child-count" id="child-0" checked="true"/>
 											<label for="child-0">0</label>
-											<input type="radio" name="child-count" id="child-1" checked="true"/>
+											<input type="radio" name="child-count" id="child-1"/>
 											<label for="child-1">1</label>
-											<input type="radio" name="child-count" id="child-2" checked="true"/>
+											<input type="radio" name="child-count" id="child-2"/>
 											<label for="child-2">2</label>
-											<input type="radio" name="child-count" id="child-3" checked="true"/>
+											<input type="radio" name="child-count" id="child-3"/>
 											<label for="child-3">3</label>
-											<input type="radio" name="child-count" id="child-4" checked="true"/>
+											<input type="radio" name="child-count" id="child-4"/>
 											<label for="child-4">4</label>
-											<input type="radio" name="child-count" id="child-5" checked="true"/>
+											<input type="radio" name="child-count" id="child-5"/>
 											<label for="child-5">5</label>
 										</div>
 									</div>
@@ -339,8 +329,23 @@
 								<div class="col-xs-6 bbig orange bold">44 €</div>
 							</div>
 						</div>
+						
 						<div class="col-xs-12">
-							<label>Укажите данные туристов:</label>
+							<div class="checkbox-input">
+								<input type="checkbox" name="transfer" id="input-transfer"/>
+								<label for="input-transfer">Нужен трансфер аэропорт/отель</label>
+							</div>
+							<div class="checkbox-switchable">
+								<div class="row">
+									<div class="col-sm-1 col-xs-2"><label>Дата:</label></div>
+									<div class="col-sm-3 col-xs-4"><input type="text" class="date" name="transfer-date"/></div>
+									<div class="col-sm-2 col-xs-2"><label>Ваш № рейса:</label></div>
+									<div class="col-sm-2 col-xs-4"><input type="text" name="transfer-num"/></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<label>Укажите данные туристов (только для многодневных экскурсий):</label>
 						</div>
 						<div class="col-md-8">
 							<div class="row">
@@ -431,18 +436,24 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="contacts">
-							<span class="phone">
+							<p>
+								Praha 1, Nové MěstoPraha1, Panská 6<br/>
+								Туристический инфоцентр<br/>
+								Tourist Information Centre
+							</p>
+							<div class="phone">
 								<a class="contacts-icon mobile" href="tel:420775621122"></a>
 								<a class="contacts-icon whatsapp" href="whatsapp://tel:420775621122"></a>
-								<a class="contacts-icon viber" href="viber://tel:420775621122"></a>
-								
-								+ (420) 775 621 122<br/>
-								+ (420) 775 094 014</span>
-							<br/><br/>
-							<span class="mail">
+								<a class="contacts-icon viber" href="viber://tel:420775621122"></a>								
+								<p>
+									+ (420) 775 621 122<br/>
+									+ (420) 775 094 014
+								</p>
+							</div>
+							<div class="mail">
 								<a class="contacts-icon mail" href="mailto:info@eurocomp.com"></a>
 								info@eurocomp.com
-							</span>
+							</div>
 						</div>
 					</div>
 					<div class="social col-lg-4">
@@ -468,6 +479,7 @@
 		</div>
 		<div class="copyright">©  2017 Loremipsum.com</div>
 	</footer>
+
 	<div class="mob mob-nav-container">
 		<div class="mob-nav">
 			<nav>
