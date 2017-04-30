@@ -228,6 +228,18 @@
 		$(this).prev("input").click();
 	});
 	
+	if($("#input-group").length){
+		$("input[name='excursion-type']").on("change",function(){
+			if($("input[name='excursion-type'][value='group']").is(":checked")){
+				$("#input-group").add("#input-group-count").prop("disabled",false);
+			}else{
+				$("#input-group").add("#input-group-count").prop("disabled",true);
+				$("#input-group").prop("checked",false);
+			}
+		});
+	}
+	$("input[name='excursion-type']").trigger("change");
+	
 	$(".excursion-card").on("click",".more",function(){
 		var $card = $(this).parents(".excursion-card").first(),
 			$activeCards = $(".excursion-card.active"),
@@ -284,6 +296,27 @@
 				}
 			});
 		}
+	});
+	$(".to-anchor").each(function(){
+		var $block = $(this),
+			$button = $block.find("a"),
+			$target = $($button.attr("href")),
+			targetPos = $target.offset().top;
+		$button.on("click",function(){
+			$("body").animate({"scrollTop":targetPos-50},500);
+			return false
+		});
+		$window.on("reszie",function(){
+			targetPos = $target.offset().top;
+		});
+		$window.trigger("resize");
+		$window.on("scroll",function(){
+			if($window.scrollTop()>300 && $window.scrollTop()<targetPos-300){
+				$block.slideDown();
+			}else{
+				$block.slideUp();
+			}
+		});
 	});
 });
 

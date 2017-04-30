@@ -383,6 +383,9 @@ header .contacts{
 	padding:.278em .833em;
 	outline:0;
 }
+.excursion-form input[type="text"]:disabled,.book-form input[type="text"]:disabled{
+	opacity:.7;
+}
 .excursion-form input.date,.book-form input.date{
 	background:#fff url(/images/forall/calendar.png) no-repeat 93% 50%;
 	padding:.278em .833em;
@@ -1077,6 +1080,10 @@ footer .basket{
 	line-height:32px;
 	cursor:pointer;
 }
+.checkbox-input input[disabled]+label{
+	color:#999;
+	cursor:default;
+}
 .checkbox-input label:before,.radio-input label:after{
 	content:'';
 	display:inline-block;
@@ -1151,12 +1158,27 @@ img.mfp-img{
 	z-index:200 !important;
 }
 
+.to-anchor{
+	display:none;
+	color:#333;
+	background:#fff;
+	padding:10px 0;
+	line-height:32px;
+}
+.to-anchor .button{
+	padding:0 20px;
+	float:right;
+}
+
 @media (min-width: 992px) {
 	.mob{
 		display:none;
 	}
 }
 @media (max-width: 991px) {
+	.to-anchor{
+		display:none;
+	}
 	#logo {
 	  margin-left:auto;
 	  margin-right:auto;
