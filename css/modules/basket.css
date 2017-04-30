@@ -48,13 +48,18 @@
 	font-size:25px;
 }
 .basket-table .button.trash{
-	line-height:44px;
-	padding:0 40px 0 80px;
-	font-size:24px;
+	line-height:32px;
+	padding:0 30px 0;
 	margin-right:-100em;
-	background-repeat:no-repeat;
-	background-position:40px 50%;
-	background-image:url(/images/basket/basket-trash.png);
+}
+.basket-table .button.trash:before{
+	content:'';
+	display:inline-block;
+	height:32px;
+	width:24px;
+	margin-right:10px;
+	vertical-align:middle;
+	background:url(/images/basket/basket-trash.png) no-repeat 50% 50%;
 }
 
 .site-form{
