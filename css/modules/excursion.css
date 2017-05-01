@@ -384,14 +384,17 @@
 	white-space:nowrap;
 }
 
-.col-md-4{
-	clear:none;
+.reduce-padding{
+	padding-left:0 !important;
 }
 
 @media (max-width: 1100px) {
 	.people-count {
 		padding-right:0;
 		padding-left:0;
+	}
+	.excursion-options>div {
+		margin:0 5px;
 	}
 }
 @media (min-width: 1200px) {
@@ -405,11 +408,14 @@
 		letter-spacing:-2px;
 	}
 }
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	.excursion-options{
-		text-align:center;
+		text-align:left;
+		padding-left:80px;
+		margin:65px 0 15px;
 	}
+}
+@media (max-width: 768px) {
 	.week{
 		margin:15px 0;
 	}
