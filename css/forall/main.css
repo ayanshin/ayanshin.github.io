@@ -381,7 +381,7 @@ header .contacts{
 	outline:0;
 }
 .excursion-form input[type="text"]:disabled,.book-form input[type="text"]:disabled{
-	opacity:.7;
+	opacity:.5;
 }
 .excursion-form input.date,.book-form input.date{
 	background:#fff url(/images/forall/calendar.png) no-repeat 93% 50%;
@@ -499,6 +499,9 @@ header .countries{
 	text-align:center;
 	color:#000;
 	margin-bottom:.889em
+}
+.people-count.disabled{
+	opacity:.5;
 }
 .people-count .gray{
 	color:#999;

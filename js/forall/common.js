@@ -229,14 +229,17 @@
 	});
 	
 	if($("#input-group").length){
-		$("input[name='excursion-type']").on("change",function(){
-			if($("input[name='excursion-type'][value='group']").is(":checked")){
-				$("#input-group").add("#input-group-count").prop("disabled",false);
+		$("#input-group").on("change",function(){
+			if($(this).is(":checked")){
+				$(".people-count").addClass("disabled").find("input").prop("checked",false).prop("disabled",true);
+				$("#input-group-count").prop("disabled",false);
 			}else{
-				$("#input-group").add("#input-group-count").prop("disabled",true);
-				$("#input-group").prop("checked",false);
+				$(".people-count").removeClass("disabled").find("input").prop("disabled",false);
+				$(".people-count .count-select input:first-child").prop("checked",true);
+				$("#input-group-count").prop("disabled",true).val("");
 			}
 		});
+		$("#input-group").trigger("change");
 	}
 	$("input[name='excursion-type']").trigger("change");
 	
